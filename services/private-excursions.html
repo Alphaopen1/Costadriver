@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<nav class="mobile-nav" id="mobileNav"><a href="../services.html">Services</a><a href="../index.html#booking">Contact</a></nav>
+<nav class="mobile-nav" id="mobileNav"><a href="../index.html#destinations" data-i18n="nav.destinations">Destinations</a><a href="../services.html" data-i18n="nav.services">Services</a><a href="../index.html#about" data-i18n="nav.about">About</a><a href="../index.html#booking" data-i18n="nav.contact">Contact</a><a href="../index.html#booking" class="mobile-book" data-i18n="nav.book">Book Now</a><div class="mobile-lang"><a href="#" class="active">EN</a><a href="#">FR</a><a href="#">RU</a><a href="#">ES</a></div></nav>
 
 <header>
   <a href="../index.html" class="logo">
@@ -23,9 +23,18 @@
     </svg>
     <span class="logo-text">Costa<span>.</span> Driver</span>
   </a>
-  <nav><a href="../index.html#destinations">Destinations</a> <a href="../services.html">Services</a> <a href="../index.html#booking">Contact</a></nav>
-  <div style="display:flex; gap:1.75rem;">
-    <a href="../index.html#booking" class="btn-book">Book Now</a>
+  <nav><a href="../index.html#destinations" data-i18n="nav.destinations">Destinations</a> <a href="../services.html" data-i18n="nav.services">Services</a> <a href="../index.html#about" data-i18n="nav.about">About</a> <a href="../index.html#booking" data-i18n="nav.contact">Contact</a></nav>
+  <div style="display:flex; align-items:center; gap:1.75rem;">
+    <div class="lang-switcher">
+      <a href="#" class="active">EN</a>
+      <span class="lang-sep">|</span>
+      <a href="#">FR</a>
+      <span class="lang-sep">|</span>
+      <a href="#">RU</a>
+      <span class="lang-sep">|</span>
+      <a href="#">ES</a>
+    </div>
+    <a href="../index.html#booking" class="btn-book" data-i18n="nav.book">Book Now</a>
     <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -33,10 +42,10 @@
 <section id="service-hero">
   <div class="section-inner">
     <div class="service-hero-content">
-      <div class="section-label">Curated Journeys</div>
-      <h1>Private<br /><em>Excursions.</em></h1>
-      <p class="hero-sub">Beyond the guidebook. Hidden villages, private galleries, scenic passes—we design bespoke journeys through the Mediterranean's most coveted addresses.</p>
-      <a href="../index.html#booking" class="btn-primary">Design Your Journey</a>
+      <div class="section-label" data-i18n="excursions.hero.label">Curated Journeys</div>
+      <h1 data-i18n-html="excursions.hero.title">Private<br /><em>Excursions.</em></h1>
+      <p class="hero-sub" data-i18n="excursions.hero.sub">Beyond the guidebook. Hidden villages, private galleries, scenic passes—we design bespoke journeys through the Mediterranean's most coveted addresses.</p>
+      <a href="../index.html#booking" class="btn-primary" data-i18n="btn.design_journey">Design Your Journey</a>
     </div>
   </div>
 </section>
@@ -134,7 +143,7 @@
 
 <section id="service-back">
   <div class="section-inner">
-    <p><a href="../services.html">← Back to Services</a></p>
+    <p><a href="../services.html" data-i18n="btn.back_services">← Back to Services</a></p>
   </div>
 </section>
 
@@ -147,11 +156,12 @@
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p><a href="tel:+33767821715">+33 7 67 82 17 15</a><br /><a href="mailto:hello@costadriver.com">hello@costadriver.com</a></p>
+        <p><a href="tel:+33767821715">+33 7 67 82 17 15</a><br /><a href="mailto:contact@costadriver.fr">contact@costadriver.fr</a></p>
       </div>
     </div>
   </div>
 </footer>
+<script src="../assets/js/i18n.js"></script>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>

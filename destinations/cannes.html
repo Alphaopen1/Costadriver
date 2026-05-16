@@ -6,7 +6,7 @@
   <title>Cannes Transfers — Costa Driver | Private Chauffeur Service</title>
   <meta name="description" content="Luxury private chauffeur transfers in Cannes. Festival access, Croisette hotels, private villas, yacht club coordination. Ultra-premium service." />
   <meta name="keywords" content="Cannes, transfers, chauffeur, private car, Croisette, Film Festival, luxury transport" />
-  <link rel="canonical" href="https://costadriver.com/destinations/cannes.html" />
+  <link rel="canonical" href="https://costadriver.fr/destinations/cannes.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     "@type": "LocalBusiness",
     "name": "Costa Driver — Cannes",
     "description": "Luxury private chauffeur transfers in Cannes, French Riviera",
-    "url": "https://costadriver.com/destinations/cannes.html",
+    "url": "https://costadriver.fr/destinations/cannes.html",
     "telephone": "+33 7 67 82 17 15",
     "areaServed": "Cannes, French Riviera, Côte d'Azur",
     "geo": {"@type": "GeoCoordinates", "latitude": 43.5527, "longitude": 7.0176},
@@ -32,11 +32,17 @@
 
 <!-- MOBILE NAV OVERLAY -->
 <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-  <a href="../index.html#destinations">Destinations</a>
-  <a href="../services.html">Services</a>
-  <a href="../index.html#about">About</a>
-  <a href="../index.html#booking">Contact</a>
-  <a href="../index.html#booking" class="mobile-book">Book Now</a>
+  <a href="../index.html#destinations" data-i18n="nav.destinations">Destinations</a>
+  <a href="../services.html" data-i18n="nav.services">Services</a>
+  <a href="../index.html#about" data-i18n="nav.about">About</a>
+  <a href="../index.html#booking" data-i18n="nav.contact">Contact</a>
+  <a href="../index.html#booking" class="mobile-book" data-i18n="nav.book">Book Now</a>
+  <div class="mobile-lang">
+    <a href="#" class="active">EN</a>
+    <a href="#">FR</a>
+    <a href="#">RU</a>
+    <a href="#">ES</a>
+  </div>
 </nav>
 
 <!-- HEADER -->
@@ -50,18 +56,22 @@
     <span class="logo-text">Costa<span>.</span> Driver</span>
   </a>
   <nav aria-label="Main navigation">
-    <a href="../index.html#destinations">Destinations</a>
-    <a href="../services.html">Services</a>
-    <a href="../index.html#about">About</a>
-    <a href="../index.html#booking">Contact</a>
+    <a href="../index.html#destinations" data-i18n="nav.destinations">Destinations</a>
+    <a href="../services.html" data-i18n="nav.services">Services</a>
+    <a href="../index.html#about" data-i18n="nav.about">About</a>
+    <a href="../index.html#booking" data-i18n="nav.contact">Contact</a>
   </nav>
   <div style="display:flex; align-items:center; gap:1.75rem;">
     <div class="lang-switcher">
       <a href="#" class="active">EN</a>
       <span class="lang-sep">|</span>
       <a href="#">FR</a>
+      <span class="lang-sep">|</span>
+      <a href="#">RU</a>
+      <span class="lang-sep">|</span>
+      <a href="#">ES</a>
     </div>
-    <a href="../index.html#booking" class="btn-book">Book Now</a>
+    <a href="../index.html#booking" class="btn-book" data-i18n="nav.book">Book Now</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -72,10 +82,10 @@
 <section id="dest-hero">
   <div class="section-inner">
     <div class="dest-hero-content">
-      <div class="section-label">The Croisette</div>
-      <h1>Cannes<br /><em>Elegance.</em></h1>
-      <p class="hero-sub">Film Festival glamour meets Mediterranean refinement. From the Croisette to private hillside villas, we navigate Cannes with seamless sophistication.</p>
-      <a href="../index.html#booking" class="btn-primary">Arrange Your Transfer</a>
+      <div class="section-label" data-i18n="cannes.hero.label">The Croisette</div>
+      <h1 data-i18n-html="cannes.hero.title">Cannes<br /><em>Elegance.</em></h1>
+      <p class="hero-sub" data-i18n="cannes.hero.sub">Film Festival glamour meets Mediterranean refinement. From the Croisette to private hillside villas, we navigate Cannes with seamless sophistication.</p>
+      <a href="../index.html#booking" class="btn-primary" data-i18n="btn.arrange_transfer">Arrange Your Transfer</a>
     </div>
   </div>
 </section>
@@ -85,7 +95,7 @@
   <div class="section-inner">
     <div class="dest-info-grid">
       <div>
-        <h2>The Film Festival Capital</h2>
+        <h2 data-i18n="cannes.overview.title">The Film Festival Capital</h2>
         <p>Cannes transforms every May into the world's most prestigious film destination. But beyond festival season, it's a year-round sanctuary of Riviera elegance—luxury hotels, private beaches, and exclusive addresses tucked into the Esterel hills.</p>
         <p>We excel at Cannes logistics. Festival season coordination, Croisette hotel arrivals, access to private villas in the hinterland, and yacht club transitions—all executed with the precision Cannes demands.</p>
       </div>
@@ -176,7 +186,7 @@
     <div class="booking-cta">
       <h2>Discover Cannes<br /><em>elegantly.</em></h2>
       <p>Whether festival season or summer escape, we coordinate your Cannes arrival flawlessly.</p>
-      <a href="../index.html#booking" class="btn-primary">Request Your Transfer</a>
+      <a href="../index.html#booking" class="btn-primary" data-i18n="btn.request_transfer">Request Your Transfer</a>
     </div>
   </div>
 </section>
@@ -184,7 +194,7 @@
 <!-- BACK TO DESTINATIONS -->
 <section id="dest-back">
   <div class="section-inner">
-    <p><a href="../index.html#destinations">← Back to All Destinations</a></p>
+    <p><a href="../index.html#destinations" data-i18n="btn.back_destinations">← Back to All Destinations</a></p>
   </div>
 </section>
 
@@ -202,7 +212,7 @@
           <strong>Phone:</strong><br />
           <a href="tel:+33767821715">+33 7 67 82 17 15</a><br /><br />
           <strong>Email:</strong><br />
-          <a href="mailto:hello@costadriver.com">hello@costadriver.com</a>
+          <a href="mailto:contact@costadriver.fr">contact@costadriver.fr</a>
         </p>
       </div>
     </div>
@@ -211,6 +221,7 @@
     </div>
   </div>
 </footer>
+<script src="../assets/js/i18n.js"></script>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>

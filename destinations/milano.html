@@ -12,7 +12,19 @@
 </head>
 <body>
 
-<nav class="mobile-nav" id="mobileNav"><a href="../index.html#destinations">Destinations</a><a href="../services.html">Services</a></nav>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <a href="../index.html#destinations" data-i18n="nav.destinations">Destinations</a>
+  <a href="../services.html" data-i18n="nav.services">Services</a>
+  <a href="../index.html#about" data-i18n="nav.about">About</a>
+  <a href="../index.html#booking" data-i18n="nav.contact">Contact</a>
+  <a href="../index.html#booking" class="mobile-book" data-i18n="nav.book">Book Now</a>
+  <div class="mobile-lang">
+    <a href="#" class="active">EN</a>
+    <a href="#">FR</a>
+    <a href="#">RU</a>
+    <a href="#">ES</a>
+  </div>
+</nav>
 
 <header>
   <a href="../index.html" class="logo">
@@ -23,20 +35,36 @@
     </svg>
     <span class="logo-text">Costa<span>.</span> Driver</span>
   </a>
-  <nav><a href="../index.html#destinations">Destinations</a> <a href="../services.html">Services</a> <a href="../index.html#booking">Contact</a></nav>
-  <div style="display:flex; gap:1.75rem;">
-    <a href="../index.html#booking" class="btn-book">Book Now</a>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <nav aria-label="Main navigation">
+    <a href="../index.html#destinations" data-i18n="nav.destinations">Destinations</a>
+    <a href="../services.html" data-i18n="nav.services">Services</a>
+    <a href="../index.html#about" data-i18n="nav.about">About</a>
+    <a href="../index.html#booking" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div style="display:flex; align-items:center; gap:1.75rem;">
+    <div class="lang-switcher">
+      <a href="#" class="active">EN</a>
+      <span class="lang-sep">|</span>
+      <a href="#">FR</a>
+      <span class="lang-sep">|</span>
+      <a href="#">RU</a>
+      <span class="lang-sep">|</span>
+      <a href="#">ES</a>
+    </div>
+    <a href="../index.html#booking" class="btn-book" data-i18n="nav.book">Book Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
 <section id="dest-hero">
   <div class="section-inner">
     <div class="dest-hero-content">
-      <div class="section-label">Italian Hub</div>
-      <h1>Milano<br /><em>Style.</em></h1>
-      <p class="hero-sub">Italy's fashion and culture capital. From Malpensa to the Duomo, from high-fashion addresses to private galleries—Milan connected with style.</p>
-      <a href="../index.html#booking" class="btn-primary">Arrange Your Transfer</a>
+      <div class="section-label" data-i18n="milano.hero.label">Italian Hub</div>
+      <h1 data-i18n-html="milano.hero.title">Milano<br /><em>Style.</em></h1>
+      <p class="hero-sub" data-i18n="milano.hero.sub">Italy's fashion and culture capital. From Malpensa to the Duomo, from high-fashion addresses to private galleries—Milan connected with style.</p>
+      <a href="../index.html#booking" class="btn-primary" data-i18n="btn.arrange_transfer">Arrange Your Transfer</a>
     </div>
   </div>
 </section>
@@ -101,14 +129,14 @@
     <div class="booking-cta">
       <h2>Discover Milano<br /><em>stylishly.</em></h2>
       <p>Italy's capital of style and culture awaits.</p>
-      <a href="../index.html#booking" class="btn-primary">Request Your Transfer</a>
+      <a href="../index.html#booking" class="btn-primary" data-i18n="btn.request_transfer">Request Your Transfer</a>
     </div>
   </div>
 </section>
 
 <section id="dest-back">
   <div class="section-inner">
-    <p><a href="../index.html#destinations">← Back to All Destinations</a></p>
+    <p><a href="../index.html#destinations" data-i18n="btn.back_destinations">← Back to All Destinations</a></p>
   </div>
 </section>
 
@@ -117,13 +145,19 @@
     <div class="footer-grid">
       <div class="footer-col">
         <a href="../index.html" class="footer-logo">Costa Driver</a>
+        <p>Ultra-premium private chauffeur and concierge service on the French and Italian Riviera.</p>
       </div>
       <div class="footer-col">
-        <p><a href="tel:+33767821715">+33 7 67 82 17 15</a></p>
+        <h4>Contact</h4>
+        <p class="contact-info">
+          <a href="tel:+33767821715">+33 7 67 82 17 15</a><br />
+          <a href="mailto:contact@costadriver.fr">contact@costadriver.fr</a>
+        </p>
       </div>
     </div>
   </div>
 </footer>
+<script src="../assets/js/i18n.js"></script>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>
