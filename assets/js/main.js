@@ -23,59 +23,67 @@ window.addEventListener('scroll', () => {
 
 /* ── Booking Form: Email + WhatsApp ── */
 (function() {
-  const btn = document.getElementById('btn-send-booking');
-  if (!btn) return;
+  var form = document.getElementById('booking-form');
+  if (!form) return;
 
-  btn.addEventListener('click', function() {
-    const form = document.getElementById('booking-form');
-    const name = (document.getElementById('client-name') || {}).value || '';
-    const email = (document.getElementById('client-email') || {}).value || '';
-    const dep = (document.getElementById('departure-date') || {}).value || '';
-    const ret = (document.getElementById('return-date') || {}).value || '';
-    const origin = (document.getElementById('origin') || {}).value || '';
-    const dest = (document.getElementById('destination') || {}).value || '';
-    const pax = (document.getElementById('passengers') || {}).value || '';
-    const vehicle = (document.getElementById('vehicle') || {}).value || '';
-    const message = (document.getElementById('message') || {}).value || '';
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
 
-    // Basic validation
-    if (!name.trim()) { highlightField('client-name'); return; }
-    if (!email.trim() || !email.includes('@')) { highlightField('client-email'); return; }
+    var name = val('client-name');
+    var email = val('client-email');
+    var dep = val('departure-date');
+    var ret = val('return-date');
+    var origin = val('origin');
+    var dest = val('destination');
+    var pax = val('passengers');
+    var vehicle = val('vehicle');
+    var message = val('message');
 
-    // Build message body
-    const lines = [
-      '🚘 *New Booking Request — Costa Driver*',
+    // Validation
+    if (!name) { highlightField('client-name'); return; }
+    if (!email || email.indexOf('@') === -1) { highlightField('client-email'); return; }
+
+    // Build message
+    var parts = [
+      '🚘 *New Booking — Costa Driver*',
       '',
       '👤 *Name:* ' + name,
-      '📧 *Email:* ' + email,
-      dep ? '📅 *Departure:* ' + dep : '',
-      ret ? '📅 *Return:* ' + ret : '',
-      origin ? '📍 *From:* ' + origin : '',
-      dest ? '📍 *To:* ' + dest : '',
-      pax ? '👥 *Passengers:* ' + pax : '',
-      vehicle ? '🚗 *Vehicle:* ' + vehicle : '',
-      message ? '💬 *Notes:* ' + message : '',
-    ].filter(Boolean).join('\n');
+      '📧 *Email:* ' + email
+    ];
+    if (dep) parts.push('📅 *Departure:* ' + dep);
+    if (ret) parts.push('📅 *Return:* ' + ret);
+    if (origin) parts.push('📍 *From:* ' + origin);
+    if (dest) parts.push('📍 *To:* ' + dest);
+    if (pax) parts.push('👥 *Passengers:* ' + pax);
+    if (vehicle) parts.push('🚗 *Vehicle:* ' + vehicle);
+    if (message) parts.push('💬 *Notes:* ' + message);
 
-    // 1) Send email via mailto
-    const subject = encodeURIComponent('Booking Request — ' + name);
-    const body = encodeURIComponent(lines.replace(/\*/g, '').replace(/[🚘👤📧📅📍👥🚗💬]/g, ''));
-    const mailtoLink = 'mailto:contact@costadriver.fr?subject=' + subject + '&body=' + body;
+    var text = parts.join('\n');
 
-    // 2) Send WhatsApp message
-    const waText = encodeURIComponent(lines);
-    const waLink = 'https://wa.me/33767821715?text=' + waText;
-
-    // Open both
+    // 1) WhatsApp
+    var waLink = 'https://wa.me/33767821715?text=' + encodeURIComponent(text);
     window.open(waLink, '_blank');
-    window.location.href = mailtoLink;
 
-    // Show success
-    form.querySelectorAll('.form-group, .form-row, .btn-submit').forEach(function(el) {
+    // 2) Email
+    var emailBody = text.replace(/\*/g, '');
+    var mailto = 'mailto:contact@costadriver.fr'
+      + '?subject=' + encodeURIComponent('Booking Request — ' + name)
+      + '&body=' + encodeURIComponent(emailBody);
+    setTimeout(function() { window.location.href = mailto; }, 500);
+
+    // Show success message
+    form.querySelectorAll('.form-group, .form-row, button').forEach(function(el) {
       el.style.display = 'none';
     });
-    document.getElementById('booking-success').style.display = 'block';
+    var success = document.getElementById('booking-success');
+    if (success) success.style.display = 'block';
   });
+
+  function val(id) {
+    var el = document.getElementById(id);
+    return el ? el.value.trim() : '';
+  }
 
   function highlightField(id) {
     var el = document.getElementById(id);

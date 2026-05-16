@@ -307,12 +307,7 @@ nav > .nav-dropdown > a:hover { color: var(--cream); }
 }
 
 .hero-horizon {
-  position: absolute;
-  top: 52%;
-  left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(184,152,90,0.3) 40%, rgba(184,152,90,0.3) 60%, transparent);
-  z-index: 3;
+  display: none;
 }
 
 .hero-content {

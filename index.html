@@ -442,7 +442,7 @@
         <div class="section-label" data-i18n="booking.label">Request a Journey</div>
         <h2 data-i18n-html="booking.title">Begin your<br /><em>inquiry.</em></h2>
         <p class="sub" data-i18n="booking.sub">A non-binding quote request. We will respond personally within one hour.</p>
-        <form id="booking-form" onsubmit="return false;">
+        <form id="booking-form">
           <div class="form-row">
             <div class="form-group">
               <label for="client-name" data-i18n="booking.name">Full Name</label>
@@ -498,7 +498,7 @@
             <label for="message" data-i18n="booking.message">Special Requests</label>
             <textarea id="message" name="message" placeholder="Luggage, concierge needs, preferred language…" data-i18n-placeholder="booking.message.placeholder"></textarea>
           </div>
-          <button type="button" id="btn-send-booking" class="btn-submit" data-i18n="btn.send_request">Send Request — Response Within 1 Hour</button>
+          <button type="submit" class="btn-submit" data-i18n="btn.send_request">Send Request — Response Within 1 Hour</button>
           <!-- Success message -->
           <div id="booking-success" style="display:none; margin-top:1.5rem; padding:1.5rem; background:rgba(184,152,90,0.08); border:1px solid rgba(184,152,90,0.3); border-radius:8px; text-align:center;">
             <div style="font-size:2rem; margin-bottom:0.5rem;">✓</div>
