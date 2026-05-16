@@ -442,7 +442,17 @@
         <div class="section-label" data-i18n="booking.label">Request a Journey</div>
         <h2 data-i18n-html="booking.title">Begin your<br /><em>inquiry.</em></h2>
         <p class="sub" data-i18n="booking.sub">A non-binding quote request. We will respond personally within one hour.</p>
-        <form action="https://formspree.io/f/xpwzqnzo" method="POST" id="booking-form">
+        <form id="booking-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="client-name" data-i18n="booking.name">Full Name</label>
+              <input type="text" id="client-name" name="client-name" placeholder="Your full name" data-i18n-placeholder="booking.name.placeholder" required />
+            </div>
+            <div class="form-group">
+              <label for="client-email" data-i18n="booking.email">Email</label>
+              <input type="email" id="client-email" name="client-email" placeholder="your@email.com" required />
+            </div>
+          </div>
           <div class="form-row">
             <div class="form-group">
               <label for="departure-date" data-i18n="booking.departure">Departure Date</label>
@@ -488,7 +498,13 @@
             <label for="message" data-i18n="booking.message">Special Requests</label>
             <textarea id="message" name="message" placeholder="Luggage, concierge needs, preferred language…" data-i18n-placeholder="booking.message.placeholder"></textarea>
           </div>
-          <button type="submit" class="btn-submit" data-i18n="btn.send_request">Send Request — Response Within 1 Hour</button>
+          <button type="button" id="btn-send-booking" class="btn-submit" data-i18n="btn.send_request">Send Request — Response Within 1 Hour</button>
+          <!-- Success message -->
+          <div id="booking-success" style="display:none; margin-top:1.5rem; padding:1.5rem; background:rgba(184,152,90,0.08); border:1px solid rgba(184,152,90,0.3); border-radius:8px; text-align:center;">
+            <div style="font-size:2rem; margin-bottom:0.5rem;">✓</div>
+            <h3 style="color:var(--gold); font-family:var(--heading); font-size:1.3rem; margin-bottom:0.5rem;" data-i18n="booking.success.title">Request Sent Successfully</h3>
+            <p style="color:var(--taupe); font-size:0.85rem; line-height:1.6;" data-i18n="booking.success.text">Your inquiry has been sent via email and WhatsApp. We will respond personally within one hour.</p>
+          </div>
         </form>
       </div>
 

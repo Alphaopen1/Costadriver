@@ -5,13 +5,11 @@
   "nav.contact": "Contacto",
   "nav.book": "Reservar",
   "nav.faq": "FAQ",
-
   "footer.description": "Servicio de chófer privado ultra-premium y conserjería en la Riviera francesa e italiana.",
   "footer.destinations": "Destinos",
   "footer.services": "Servicios",
   "footer.contact": "Contacto",
   "footer.rights": "© 2025 Costa Driver. Todos los derechos reservados.",
-
   "btn.book_journey": "Reserve su trayecto",
   "btn.explore": "Explorar destinos",
   "btn.begin_inquiry": "Iniciar su consulta",
@@ -25,17 +23,14 @@
   "btn.plan_event": "Planificar su evento",
   "btn.request_concierge": "Solicitar conserjería",
   "btn.design_journey": "Diseñar su excursión",
-
   "hero.eyebrow": "Côte d'Azur & Riviera Italiana",
   "hero.title": "La Riviera,<br /><em>Magistralmente</em><br />Conectada.",
   "hero.sub": "Traslados privados y coordinación de conserjería en las direcciones más codiciadas del Mediterráneo — ejecutados con absoluta discreción.",
-
   "trust.years": "Años en la Riviera",
   "trust.concierge": "Acceso Conserjería",
   "trust.destinations": "Destinos de especialidad",
   "trust.private": "Privado y Discreto",
   "trust.languages": "Idiomas hablados",
-
   "pillars.label": "El Estándar Costa Driver",
   "pillars.title": "Cada trayecto es una declaración.<br /><em>Nos aseguramos de que sea perfecto.</em>",
   "pillars.expertise.title": "La Maestría",
@@ -44,39 +39,30 @@
   "pillars.experience.text": "Desde el momento en que su vuelo aterriza en Niza Costa Azul hasta que la puerta de su suite se cierra, cada traslado está coreografiado para parecer sin esfuerzo. Sin esperas, sin incertidumbre, sin fricción — solo el placer ininterrumpido de llegar como corresponde.",
   "pillars.privilege.title": "El Privilegio",
   "pillars.privilege.text": "Acceso de conserjería para reservas de restaurantes, coordinación de villas privadas, traslados en yate y solicitudes de última hora que otros no pueden satisfacer. Para clientes que exigen absoluta discreción y la infraestructura invisible del verdadero viaje de lujo.",
-
   "dest.label": "Nuestro Territorio",
   "dest.title": "Siete direcciones.<br /><em>Un trayecto sin fisuras.</em>",
   "dest.intro": "Desde el lujo alpino de Les Deux-Alpes hasta las calas escondidas de Cinque Terre — le transportamos por las más bellas direcciones del Mediterráneo y las montañas con autoridad discreta.",
-
   "dest.les-deux-alpes.tag": "Alpes Franceses",
   "dest.les-deux-alpes.title": "Les Deux-Alpes",
   "dest.les-deux-alpes.text": "La cumbre del lujo y la aventura alpina. Desde pistas de esquí de clase mundial hasta experiencias estivales en montaña, accesible con la discreción y el confort dignos de nuestra clientela.",
-
   "dest.monaco.tag": "Principado",
   "dest.monaco.title": "Mónaco",
   "dest.monaco.text": "Acceso privado al Principado — temporada de Gran Premio, Salle des Étoiles, Terraza del Casino. Gestionado con la discreción que el Principado exige.",
-
   "dest.cannes.tag": "Riviera Francesa",
   "dest.cannes.title": "Cannes",
   "dest.cannes.text": "De la Croisette a las villas privadas del interior de Cannes. Temporada de festivales, proyecciones privadas, y las Islas de Lérins — conectados, impecablemente.",
-
   "dest.st-tropez.tag": "Riviera Francesa",
   "dest.st-tropez.title": "Saint-Tropez",
   "dest.st-tropez.text": "Más allá del Vieux-Port, más allá de Pampelonne — el pueblo que define la mitología mediterránea, alcanzado sin compromiso.",
-
   "dest.portofino.tag": "Riviera Italiana",
   "dest.portofino.title": "Portofino",
   "dest.portofino.text": "La joya de la costa de Liguria. Traslados privados que le conectan con el Belmond Splendido, Villa Hanbury, y la elegancia tranquila de la costa italiana.",
-
   "dest.cinque-terre.tag": "Riviera Italiana",
   "dest.cinque-terre.title": "Cinque Terre",
   "dest.cinque-terre.text": "Cinco pueblos suspendidos entre acantilado y mar. Navegamos donde otros no pueden, llevándole a Vernazza y Riomaggiore en sus propios términos.",
-
   "dest.milano.tag": "Hub Italiano",
   "dest.milano.title": "Milano",
   "dest.milano.text": "Capital italiana de la moda y la cultura. Del aeropuerto de Malpensa al Duomo, de las direcciones de alta costura a las galerías privadas — Milán conectada con estilo y sofisticación.",
-
   "service.label": "Cómo funciona",
   "service.title": "Sin esfuerzo desde<br /><em>el primer contacto.</em>",
   "service.sub": "Tres pasos entre donde está y exactamente donde desea estar. Nada más se requiere de su parte.",
@@ -86,7 +72,6 @@
   "service.step2.text": "Su trayecto es a medida — selección de vehículo, horarios, arreglos especiales, planificación de varios días. Anticipamos lo que aún no ha solicitado.",
   "service.step3.title": "El Trayecto Perfecto",
   "service.step3.text": "Su chófer está presente. Su vehículo es impecable. Su tiempo es respetado. El trayecto se ejecuta con la misma atención que su planificación.",
-
   "fleet.label": "La Flota",
   "fleet.eclass.class": "Ejecutivo Individual",
   "fleet.eclass.name": "Mercedes-Benz Clase E",
@@ -108,7 +93,6 @@
   "fleet.rr.text": "Donde la sofisticación se encuentra con la aventura. La cúspide del diseño SUV de lujo — perfecto para quienes exigen elegancia y rendimiento.",
   "fleet.rr.capacity": "1–4 Pasajeros",
   "fleet.rr.tier": "Ultra-Lujo",
-
   "about.label": "Sobre Costa Driver",
   "about.title": "Precisión invisible.<br /><em>Impresión duradera.</em>",
   "about.text1": "Costa Driver fue fundado con una convicción única: que las mejores experiencias de viaje no se definen por sus destinos, sino por la calidad de la conexión entre ellos. Operamos exclusivamente en la Riviera francesa e italiana, dedicando toda nuestra experiencia a esta costa singular y extraordinaria.",
@@ -117,10 +101,8 @@
   "about.languages": "Idiomas",
   "about.availability": "Disponibilidad",
   "about.private": "Privado y Discreto",
-
   "testimonials.label": "Voces de confianza",
   "testimonials.title": "Lo que nuestros clientes<br /><em>dicen de nosotros.</em>",
-
   "booking.label": "Solicitar un trayecto",
   "booking.title": "Inicie su<br /><em>consulta.</em>",
   "booking.sub": "Una solicitud de presupuesto sin compromiso. Le responderemos personalmente en una hora.",
@@ -149,9 +131,7 @@
   "booking.based_value": "Mouans-Sartoux, Francia",
   "booking.wa_top": "WhatsApp — Respuesta inmediata",
   "booking.wa_sub": "Solicitudes complejas y de última hora",
-
   "wa.label": "Servicio inmediato",
-
   "services.hero.label": "Más allá del transporte",
   "services.hero.title": "Servicios que<br /><em>completan el viaje.</em>",
   "services.hero.sub": "Desde excursiones privadas hasta coordinación de conserjería, planificación de eventos y bodas de destino — orquestamos cada detalle de su experiencia en la Riviera.",
@@ -165,61 +145,54 @@
   "services.weddings.text": "Su día de boda, transportado. Llegadas familiares de Niza a Portofino, logística de invitados por toda la Riviera, coordinación de la cena de ensayo, expediciones fotográficas — cada invitado llega exactamente cuando y donde debe estar.",
   "services.cta.title": "¿Listo para elevar<br /><em>su viaje?</em>",
   "services.cta.sub": "Cualquier servicio, cualquier complejidad. Respondemos en una hora.",
-
   "lda.hero.label": "Lujo de los Alpes Franceses",
   "lda.hero.title": "Les Deux-Alpes<br /><em>Ascenso.</em>",
   "lda.hero.sub": "Elegancia de temporada de esquí. Refinamiento estival en montaña. Su viaje a la estación de esquí más alta de Europa, coordinado con absoluta precisión.",
   "lda.overview.title": "La Cumbre Alpina",
   "lda.overview.text1": "A 3.600 metros, Les Deux-Alpes se erige como la estación de esquí más alta de Europa. Más allá de las pistas, es un santuario para quienes buscan el refinamiento montañés — excursiones estivales, residencias privadas de altitud extraordinaria, y experiencias accesibles solo para quienes tienen las conexiones adecuadas.",
   "lda.overview.text2": "Costa Driver coordina llegadas y salidas en estas montañas desde hace más de una década. Entendemos la logística alpina, los restaurantes Michelin en altitud, y el timing preciso requerido para experiencias montañesas impecables.",
-
   "monaco.hero.label": "El Principado",
   "monaco.hero.title": "Mónaco<br /><em>Discreción.</em>",
   "monaco.hero.sub": "Donde la élite europea converge. Temporada de Gran Premio, Terraza del Casino, direcciones privadas — le transportamos por Mónaco con la discreción que el Principado exige.",
   "monaco.overview.title": "La Joya de Europa",
   "monaco.overview.text1": "Mónaco no es solo un destino — es una institución. Hogar de clubes náuticos de clase mundial, el Casino de Monte Carlo, y el circuito del Gran Premio que detiene el tráfico durante dos semanas cada año. El Principado exige precisión, discreción y comprensión de sus protocolos únicos.",
   "monaco.overview.text2": "Costa Driver ha coordinado llegadas y salidas para los residentes y visitantes más exigentes de Mónaco. Conocemos las entradas privadas, los tiempos necesarios para un acceso fluido al Casino, y cómo gestionar la logística de la temporada del Gran Premio con ejecución impecable.",
-
   "cannes.hero.label": "La Croisette",
   "cannes.hero.title": "Cannes<br /><em>Elegancia.</em>",
   "cannes.hero.sub": "El glamur del Festival de Cine se encuentra con el refinamiento mediterráneo. De la Croisette a las villas privadas de las colinas, navegamos Cannes con sofisticación impecable.",
   "cannes.overview.title": "La Capital del Festival de Cine",
-
   "sttropez.hero.label": "Pueblo Mediterráneo",
   "sttropez.hero.title": "Saint-Tropez<br /><em>Leyenda.</em>",
   "sttropez.hero.sub": "El pueblo que definió el mito mediterráneo. Más allá de las playas de Pampelonne hasta las calas escondidas — Saint-Tropez solo es alcanzado por quienes conocen el camino.",
-
   "portofino.hero.label": "Joya de la Riviera Italiana",
   "portofino.hero.title": "Portofino<br /><em>Encanto.</em>",
   "portofino.hero.sub": "Pueblo de pescadores pastel convertido en santuario exclusivo. Belmond Splendido, yates privados, Villa Hanbury — Portofino encarna la perfección mediterránea.",
-
   "cinque.hero.label": "Tesoros UNESCO",
   "cinque.hero.title": "Cinque Terre<br /><em>Magia.</em>",
   "cinque.hero.sub": "Cinco pueblos suspendidos entre acantilado y mar. Patrimonio Mundial de la UNESCO donde navegamos donde otros no pueden.",
-
   "milano.hero.label": "Hub Italiano",
   "milano.hero.title": "Milano<br /><em>Estilo.</em>",
   "milano.hero.sub": "Capital italiana de la moda y la cultura. De Malpensa al Duomo, de las direcciones de alta costura a las galerías privadas — Milán conectada con estilo.",
-
   "excursions.hero.label": "Viajes a Medida",
   "excursions.hero.title": "Excursiones<br /><em>Privadas.</em>",
   "excursions.hero.sub": "Más allá de la guía turística. Pueblos escondidos, galerías privadas, puertos de montaña — diseñamos viajes a medida por las direcciones más codiciadas del Mediterráneo.",
-
   "concierge.hero.label": "Su Segunda Oficina",
   "concierge.hero.title": "Conserjería<br /><em>de Lujo.</em>",
   "concierge.hero.sub": "Reservas en establecimientos completos. Chárter de helicópteros. Coordinación de yates. Operamos en una red de confianza construida durante más de una década.",
-
   "events.hero.label": "Momentos Importantes",
   "events.hero.title": "Eventos y<br /><em>Ocasiones.</em>",
   "events.hero.sub": "Lanzamientos de productos en la Croisette. Cenas privadas en calas escondidas. Retiros corporativos. Cada detalle coordinado, cada horario respetado, discreción absoluta garantizada.",
-
   "weddings.hero.label": "Su día de boda, transportado.",
   "weddings.hero.title": "Bodas de<br /><em>Destino.</em>",
   "weddings.hero.sub": "Cada familiar llega exactamente cuando debe. Cada invitado transita sin esfuerzo. Su día de boda transcurre impecablemente, desde la primera llegada hasta la última partida.",
-
   "faq.title": "Preguntas<br /><em>Frecuentes.</em>",
   "faq.intro": "Todo lo que necesita saber sobre reservas y viajes con Costa Driver.",
   "faq.cta": "¿No encontró su respuesta?",
   "faq.cta_link": "Contáctenos directamente",
-  "faq.cta_suffix": " — respondemos en una hora."
+  "faq.cta_suffix": " — respondemos en una hora.",
+  "booking.name": "Nombre completo",
+  "booking.name.placeholder": "Su nombre completo",
+  "booking.email": "Correo electrónico",
+  "booking.success.title": "Solicitud enviada con éxito",
+  "booking.success.text": "Su consulta ha sido enviada por email y WhatsApp. Le responderemos personalmente en menos de una hora."
 }
