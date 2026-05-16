@@ -498,13 +498,20 @@
             <label for="message" data-i18n="booking.message">Special Requests</label>
             <textarea id="message" name="message" placeholder="Luggage, concierge needs, preferred language…" data-i18n-placeholder="booking.message.placeholder"></textarea>
           </div>
-          <button type="submit" class="btn-submit" data-i18n="btn.send_request">Send Request — Response Within 1 Hour</button>
-          <!-- Success message -->
-          <div id="booking-success" style="display:none; margin-top:1.5rem; padding:1.5rem; background:rgba(184,152,90,0.08); border:1px solid rgba(184,152,90,0.3); border-radius:8px; text-align:center;">
-            <div style="font-size:2rem; margin-bottom:0.5rem;">✓</div>
-            <h3 style="color:var(--gold); font-family:var(--heading); font-size:1.3rem; margin-bottom:0.5rem;" data-i18n="booking.success.title">Request Sent Successfully</h3>
-            <p style="color:var(--taupe); font-size:0.85rem; line-height:1.6;" data-i18n="booking.success.text">Your inquiry has been sent via email and WhatsApp. We will respond personally within one hour.</p>
+          <div class="form-group">
+            <label data-i18n="booking.send_via">Send via</label>
+            <div class="send-method-toggle">
+              <label class="method-option">
+                <input type="radio" name="send-method" value="email" checked />
+                <span class="method-label">✉ Email</span>
+              </label>
+              <label class="method-option">
+                <input type="radio" name="send-method" value="whatsapp" />
+                <span class="method-label">💬 WhatsApp</span>
+              </label>
+            </div>
           </div>
+          <button type="submit" class="btn-submit" data-i18n="btn.send_request">Send Request — Response Within 1 Hour</button>
         </form>
       </div>
 

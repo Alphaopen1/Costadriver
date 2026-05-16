@@ -194,5 +194,6 @@
   "booking.name.placeholder": "Ваше полное имя",
   "booking.email": "Электронная почта",
   "booking.success.title": "Запрос успешно отправлен",
-  "booking.success.text": "Ваш запрос отправлен по электронной почте и WhatsApp. Мы ответим лично в течение часа."
+  "booking.success.text": "Ваш запрос отправлен по электронной почте и WhatsApp. Мы ответим лично в течение часа.",
+  "booking.send_via": "Отправить через"
 }

@@ -61,16 +61,21 @@ window.addEventListener('scroll', () => {
 
     var text = parts.join('\n');
 
-    // 1) WhatsApp
-    var waLink = 'https://wa.me/33767821715?text=' + encodeURIComponent(text);
-    window.open(waLink, '_blank');
+    // Check chosen method
+    var method = 'email';
+    var radios = form.querySelectorAll('input[name="send-method"]');
+    radios.forEach(function(r) { if (r.checked) method = r.value; });
 
-    // 2) Email
-    var emailBody = text.replace(/\*/g, '');
-    var mailto = 'mailto:contact@costadriver.fr'
-      + '?subject=' + encodeURIComponent('Booking Request — ' + name)
-      + '&body=' + encodeURIComponent(emailBody);
-    setTimeout(function() { window.location.href = mailto; }, 500);
+    if (method === 'whatsapp') {
+      var waLink = 'https://wa.me/33767821715?text=' + encodeURIComponent(text);
+      window.open(waLink, '_blank');
+    } else {
+      var emailBody = text.replace(/\*/g, '');
+      var mailto = 'mailto:contact@costadriver.fr'
+        + '?subject=' + encodeURIComponent('Booking Request — ' + name)
+        + '&body=' + encodeURIComponent(emailBody);
+      window.location.href = mailto;
+    }
 
     // Show success message
     form.querySelectorAll('.form-group, .form-row, button').forEach(function(el) {

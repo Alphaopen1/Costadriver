@@ -194,5 +194,6 @@
   "booking.name.placeholder": "Su nombre completo",
   "booking.email": "Correo electrónico",
   "booking.success.title": "Solicitud enviada con éxito",
-  "booking.success.text": "Su consulta ha sido enviada por email y WhatsApp. Le responderemos personalmente en menos de una hora."
+  "booking.success.text": "Su consulta ha sido enviada por email y WhatsApp. Le responderemos personalmente en menos de una hora.",
+  "booking.send_via": "Enviar por"
 }

@@ -194,5 +194,6 @@
   "booking.name.placeholder": "Votre nom complet",
   "booking.email": "Email",
   "booking.success.title": "Demande envoyée avec succès",
-  "booking.success.text": "Votre demande a été envoyée par email et WhatsApp. Nous vous répondrons personnellement dans l'heure."
+  "booking.success.text": "Votre demande a été envoyée par email et WhatsApp. Nous vous répondrons personnellement dans l'heure.",
+  "booking.send_via": "Envoyer via"
 }

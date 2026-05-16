@@ -1625,6 +1625,36 @@ input:focus, select:focus, textarea:focus { border-color: var(--gold); }
 select { cursor: pointer; }
 textarea { resize: vertical; min-height: 80px; }
 
+.send-method-toggle {
+  display: flex;
+  gap: 1rem;
+}
+.method-option {
+  flex: 1;
+  cursor: pointer;
+}
+.method-option input { display: none; }
+.method-label {
+  display: block;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-family: var(--body);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  border: 1px solid rgba(184,152,90,0.25);
+  color: var(--taupe);
+  transition: all 0.25s;
+}
+.method-option input:checked + .method-label {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(184,152,90,0.08);
+}
+.method-label:hover {
+  border-color: var(--gold);
+  color: var(--cream);
+}
+
 .btn-submit {
   font-size: 0.65rem;
   font-weight: 500;
