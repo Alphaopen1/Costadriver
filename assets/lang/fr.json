@@ -195,5 +195,8 @@
   "booking.email": "Email",
   "booking.success.title": "Demande envoyée avec succès",
   "booking.success.text": "Votre demande a été envoyée par email et WhatsApp. Nous vous répondrons personnellement dans l'heure.",
-  "booking.send_via": "Envoyer via"
+  "booking.send_via": "Envoyer via",
+  "dest.geneve.tag": "Suisse",
+  "dest.geneve.title": "Genève",
+  "dest.geneve.text": "Capitale cosmopolite de la Suisse au bord du lac Léman. Diplomatie internationale, haute horlogerie et grandeur alpine — connectée depuis la Riviera avec une précision sans faille."
 }

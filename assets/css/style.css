@@ -586,6 +586,10 @@ p { color: #555; line-height: 1.85; }
   background: url('../images/milano.jpg') center/cover no-repeat;
   background-color: #1a1a2a;
 }
+.dest-card[data-dest="geneve"] .dest-bg {
+  background: url('../images/geneve.jpg') center/cover no-repeat;
+  background-color: #1a2a3a;
+}
 
 .dest-bg {
   position: absolute;
