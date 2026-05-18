@@ -32,9 +32,19 @@
 <header>
   <a href="../index.html" class="logo">
     <svg class="logo-mark" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
-      <path d="M 82,18 A 44,47 0 1,0 82,92" stroke="#b8985a" stroke-width="10" stroke-linecap="round"/>
-      <line x1="55" y1="8" x2="55" y2="102" stroke="#b8985a" stroke-width="10" stroke-linecap="round"/>
-      <path d="M 55,8 A 44,47 0 0,1 55,102" stroke="#b8985a" stroke-width="10" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="silverG" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#d8d2c4"/>
+          <stop offset="100%" stop-color="#5a5246"/>
+        </linearGradient>
+        <linearGradient id="goldG" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#d4a857"/>
+          <stop offset="100%" stop-color="#6e4f1e"/>
+        </linearGradient>
+      </defs>
+      <path d="M 82,18 A 44,47 0 1,0 82,92" stroke="url(#silverG)" stroke-width="10" stroke-linecap="round"/>
+      <line x1="55" y1="8" x2="55" y2="102" stroke="url(#goldG)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 55,8 A 44,47 0 0,1 55,102" stroke="url(#goldG)" stroke-width="10" stroke-linecap="round"/>
     </svg>
     <span class="logo-text">Costa<span>.</span> Driver</span>
   </a>

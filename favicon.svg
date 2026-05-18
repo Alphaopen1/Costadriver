@@ -1,9 +1,18 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
-  <rect width="100" height="100" fill="#1a1a1a"/>
-  <!-- C arc -->
-  <path d="M 70,15 A 40,42 0 1,0 70,85" stroke="#b8985a" stroke-width="8" stroke-linecap="round"/>
-  <!-- D divider -->
-  <line x1="50" y1="10" x2="50" y2="90" stroke="#b8985a" stroke-width="8" stroke-linecap="round"/>
-  <!-- D arc -->
-  <path d="M 50,10 A 40,42 0 0,1 50,90" stroke="#b8985a" stroke-width="8" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d8d2c4"/>
+      <stop offset="100%" stop-color="#5a5246"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4a857"/>
+      <stop offset="100%" stop-color="#6e4f1e"/>
+    </linearGradient>
+  </defs>
+  <!-- C arc (silver, left side) -->
+  <path d="M 50,10 A 40,42 0 1,0 50,90" stroke="url(#silverGrad)" stroke-width="8" stroke-linecap="round"/>
+  <!-- D divider (gold) -->
+  <line x1="50" y1="10" x2="50" y2="90" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round"/>
+  <!-- D arc (gold, right side) -->
+  <path d="M 50,10 A 40,42 0 0,1 50,90" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round"/>
 </svg>
