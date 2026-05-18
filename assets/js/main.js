@@ -5,6 +5,7 @@ hamburger.addEventListener('click', () => {
   const open = hamburger.classList.toggle('open');
   mobileNav.classList.toggle('open', open);
   document.body.classList.toggle('nav-open', open);
+  hamburger.setAttribute('aria-expanded', open);
 });
 
 mobileNav.querySelectorAll('a').forEach(link => {
@@ -12,6 +13,18 @@ mobileNav.querySelectorAll('a').forEach(link => {
     hamburger.classList.remove('open');
     mobileNav.classList.remove('open');
     document.body.classList.remove('nav-open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+/* ── Make entire destination card tappable ── */
+document.querySelectorAll('.dest-card').forEach(card => {
+  const link = card.querySelector('.dest-link');
+  if (!link) return;
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', e => {
+    if (e.target.closest('a')) return; // don't double-fire if clicking the link itself
+    window.location.href = link.href;
   });
 });
 

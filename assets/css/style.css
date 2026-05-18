@@ -2058,28 +2058,91 @@ footer {
   .hamburger { display: flex; }
   .lang-switcher { display: none; }
   .btn-book { display: none; }
-  .hero-content { padding: 0 2rem 6rem; }
+  .hero-content { padding: 0 2rem 5rem; }
   .section-inner { padding: 0 2rem; }
   .pillars-grid { grid-template-columns: 1fr; }
   .pillar { border-right: none; border-bottom: 1px solid rgba(196,184,164,0.3); }
   .dest-grid { grid-template-columns: 1fr 1fr; }
   .dest-card:first-child { grid-column: span 2; }
+  /* Destination links always visible on touch devices */
+  .dest-link { opacity: 1; transform: translateY(0); }
   .fleet-grid { grid-template-columns: 1fr 1fr; }
   .booking-grid { grid-template-columns: 1fr; gap: 3rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .service-intro { grid-template-columns: 1fr; gap: 3rem; }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+  /* Stack hero CTA buttons on tablet */
+  .hero-cta-group { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  /* Destination & service page hero */
+  #dest-hero, #service-hero, #services-hero, #faq-hero { min-height: 380px; }
+  .dest-info-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .related-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .services-links-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
 }
 
 @media (max-width: 640px) {
-  h1 { font-size: 2.4rem; }
-  .dest-grid { grid-template-columns: 1fr; }
-  .dest-card:first-child { grid-column: span 1; }
-  .fleet-grid { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
-  .trust-inner { gap: 2rem; }
-  .trust-divider { display: none; }
-  .about-stat-grid { grid-template-columns: 1fr 1fr; }
+  /* Typography */
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+
+  /* Spacing — reduce 8rem sections to 4rem */
+  #pillars, #destinations, #service, #about,
+  #testimonials, #booking,
+  #dest-overview, #dest-services, #dest-practical,
+  #dest-services-links, #dest-related,
+  #service-overview, #service-offerings, #why-us,
+  #services-offerings { padding: 4rem 0; }
+  #dest-booking, #service-booking, #services-cta { padding: 3.5rem 0; }
+
+  /* Inner padding tighter */
+  .section-inner { padding: 0 1.25rem; }
+
+  /* Hero */
+  .hero-content { padding: 0 1.25rem 4rem; }
   .hero-scroll { display: none; }
+
+  /* Trust strip */
+  .trust-inner { gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+  .trust-divider { display: none; }
+  .trust-item .num { font-size: 1.8rem; }
+
+  /* Pillars */
+  .pillar { padding: 2rem 1.5rem; }
+
+  /* Destinations grid */
+  .dest-grid { grid-template-columns: 1fr; }
+  .dest-card:first-child { grid-column: span 1; min-height: 260px; }
+  .dest-card { min-height: 220px; }
+  .dest-content { padding: 1.25rem; }
+
+  /* Fleet */
+  .fleet-grid { grid-template-columns: 1fr; }
+
+  /* Service steps */
+  .service-intro { margin-bottom: 3rem; }
+
+  /* Forms */
+  .form-row { grid-template-columns: 1fr; }
+  .booking-grid { gap: 2rem; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 0.75rem; text-align: center; }
+
+  /* Stats grid */
+  .about-stat-grid { grid-template-columns: 1fr 1fr; }
+  .dest-stats { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .stat-item { padding: 1.25rem; }
+
+  /* Cross-link grids */
+  .related-grid { grid-template-columns: 1fr; }
+  .services-links-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+
+  /* Destination info */
+  .dest-info-grid { gap: 2rem; }
+  .practical-grid { grid-template-columns: 1fr; }
+  .dest-service-grid { grid-template-columns: 1fr; }
+  .offering-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
 }
