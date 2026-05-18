@@ -1,15 +1,40 @@
 {
   "rewrites": [
     {
-      "source": "/:path((?!assets|destinations|services|news|fr|favicon|robots|404|_next).*)",
-      "destination": "/index.html"
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "fr.costadriver.fr"
+        }
+      ],
+      "destination": "/fr/:path*"
     },
     {
-      "source": "/fr/:path((?!assets).*)",
-      "destination": "/fr/index.html"
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.costadriver.fr"
+        }
+      ],
+      "destination": "/:1"
+    },
+    {
+      "source": "/:path((?!assets|destinations|services|news|fr|favicon|robots|404|_next|\.well-known).*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
+    {
+      "source": "/favicon.svg",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
     {
       "source": "/fr/(.*)",
       "headers": [
