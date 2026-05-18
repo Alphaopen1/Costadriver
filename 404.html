@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page Not Found — Costa Driver</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { background: #0E0D0C; color: #EBE4D7; min-height: 100vh; margin: 0;
+           font-family: 'Jost', sans-serif; display: flex; flex-direction: column; }
+    .err-wrap { flex: 1; display: flex; align-items: center; justify-content: center;
+                padding: 4rem 2rem; text-align: center; }
+    .err-content { max-width: 560px; }
+    .err-code { font-family: 'Cormorant Garamond', serif; font-size: clamp(5rem, 12vw, 9rem);
+                color: #D4A857; font-weight: 300; line-height: 1; margin: 0 0 1.5rem; font-style: italic; }
+    .err-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 4vw, 2.6rem);
+                 font-weight: 300; line-height: 1.2; margin: 0 0 1.2rem; }
+    .err-sub { font-size: 1rem; font-weight: 300; color: rgba(235,228,215,0.65);
+               line-height: 1.7; margin-bottom: 2.5rem; }
+    .err-links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .err-links a { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+                   color: #D4A857; text-decoration: none; padding: 0.85rem 1.6rem;
+                   border: 1px solid rgba(212,168,87,0.4); transition: all 0.2s; }
+    .err-links a:hover { background: #D4A857; color: #0E0D0C; }
+    .err-links a.primary { background: #D4A857; color: #0E0D0C; border-color: #D4A857; }
+    .err-links a.primary:hover { background: transparent; color: #D4A857; }
+  </style>
+</head>
+<body>
+  <div class="err-wrap">
+    <div class="err-content">
+      <div class="err-code">404</div>
+      <h1 class="err-title">This route doesn't exist on the Riviera.</h1>
+      <p class="err-sub">The page you're looking for has been moved, renamed, or never existed. Let us guide you back.</p>
+      <div class="err-links">
+        <a href="/" class="primary">Back to Home</a>
+        <a href="/index.html#destinations">Destinations</a>
+        <a href="/services.html">Services</a>
+        <a href="/index.html#booking">Contact</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

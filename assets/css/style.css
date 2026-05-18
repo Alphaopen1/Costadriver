@@ -557,37 +557,45 @@ p { color: #555; line-height: 1.85; }
   min-height: 380px;
 }
 
-/* ── Destination backgrounds — replace each url() with your own photo ── */
+/* ── Destination backgrounds — WebP first, JPG fallback for old browsers ── */
 .dest-card[data-dest="les-deux-alpes"] .dest-bg {
   background: url('../images/les-deux-alpes.jpg') center/cover no-repeat;
+  background-image: image-set(url('../images/les-deux-alpes.webp') type('image/webp'), url('../images/les-deux-alpes.jpg') type('image/jpeg'));
   background-color: #2a1f15;
 }
 .dest-card[data-dest="monaco"] .dest-bg {
   background: url('../images/monaco.jpg') center/cover no-repeat;
+  background-image: image-set(url('../images/monaco.webp') type('image/webp'), url('../images/monaco.jpg') type('image/jpeg'));
   background-color: #0d1520;
 }
 .dest-card[data-dest="cannes"] .dest-bg {
   background: url('../images/cannes.jpg') center/cover no-repeat;
+  background-image: image-set(url('../images/cannes.webp') type('image/webp'), url('../images/cannes.jpg') type('image/jpeg'));
   background-color: #2a1a10;
 }
 .dest-card[data-dest="st-tropez"] .dest-bg {
   background: url('../images/st-tropez.jpg') center/cover no-repeat;
+  background-image: image-set(url('../images/st-tropez.webp') type('image/webp'), url('../images/st-tropez.jpg') type('image/jpeg'));
   background-color: #1a2a20;
 }
 .dest-card[data-dest="portofino"] .dest-bg {
   background: url('../images/portofino.jpg') center/cover no-repeat;
+  background-image: image-set(url('../images/portofino.webp') type('image/webp'), url('../images/portofino.jpg') type('image/jpeg'));
   background-color: #1a1a2a;
 }
 .dest-card[data-dest="cinque-terre"] .dest-bg {
   background: url('../images/cinque-terre.jpg') center/cover no-repeat;
+  background-image: image-set(url('../images/cinque-terre.webp') type('image/webp'), url('../images/cinque-terre.jpg') type('image/jpeg'));
   background-color: #2a1520;
 }
 .dest-card[data-dest="milano"] .dest-bg {
   background: url('../images/milano.jpg') center/cover no-repeat;
+  background-image: image-set(url('../images/milano.webp') type('image/webp'), url('../images/milano.jpg') type('image/jpeg'));
   background-color: #1a1a2a;
 }
 .dest-card[data-dest="geneve"] .dest-bg {
   background: url('../images/geneve.jpg') center/cover no-repeat;
+  background-image: image-set(url('../images/geneve.webp') type('image/webp'), url('../images/geneve.jpg') type('image/jpeg'));
   background-color: #1a2a3a;
 }
 

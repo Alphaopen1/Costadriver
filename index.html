@@ -6,6 +6,14 @@
   <title>Costa Driver — Private Chauffeur Service, French &amp; Italian Riviera</title>
   <meta name="description" content="Ultra-premium private chauffeur and concierge transfer service on the French and Italian Riviera. Discreet, exclusive, flawless." />
   <link rel="canonical" href="https://costadriver.fr/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Costa Driver — Private Chauffeur Service, French &amp; Italian Riviera" />
+  <meta property="og:description" content="Ultra-premium private chauffeur and concierge transfer service on the French and Italian Riviera. Discreet, exclusive, flawless." />
+  <meta property="og:url" content="https://costadriver.fr/" />
+  <meta property="og:image" content="https://costadriver.fr/assets/images/hero-poster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -121,7 +129,9 @@
 <!-- Hero background image: place your photo at assets/images/hero.jpg -->
 <section id="hero">
   <div class="hero-bg">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline preload="metadata"
+           poster="assets/images/hero-poster.jpg"
+           aria-label="Costa Driver Riviera showreel">
       <source src="assets/videos/hero.mp4" type="video/mp4">
     </video>
     <div class="hero-horizon"></div>
