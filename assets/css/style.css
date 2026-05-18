@@ -851,10 +851,9 @@ p { color: #555; line-height: 1.85; }
   display: none;
 }
 
-/* E-Class sizing: 10% smaller than S-Class */
+/* E-Class sizing: slightly smaller than S-Class */
 .vehicle-card:nth-child(1) .vehicle-img {
-  transform: scale(0.9);
-  transform-origin: center;
+  height: 210px;
 }
 
 /* ─── SERVICES PAGE ─── */
