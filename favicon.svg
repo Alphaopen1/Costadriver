@@ -1,12 +1,12 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
   <defs>
     <linearGradient id="silverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#d8d2c4"/>
-      <stop offset="100%" stop-color="#5a5246"/>
+      <stop offset="0%" stop-color="#e8e3d8"/>
+      <stop offset="100%" stop-color="#6b6359"/>
     </linearGradient>
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#D4C050"/>
-      <stop offset="100%" stop-color="#8A7A2C"/>
+      <stop offset="0%" stop-color="#e8d89f"/>
+      <stop offset="100%" stop-color="#9d8a3f"/>
     </linearGradient>
   </defs>
   <!-- C arc (silver, left side) -->
