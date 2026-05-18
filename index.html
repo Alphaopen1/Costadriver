@@ -466,6 +466,41 @@
   </div>
 </section>
 
+<!-- GOOGLE REVIEWS CAROUSEL -->
+<section id="google-reviews" style="background: #f5f0e8; padding: 6rem 0; position: relative;">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="reviews.label">Google Reviews</div>
+    <h2 data-i18n="reviews.title" style="margin-bottom: 3rem;">What Google says</h2>
+
+    <div class="reviews-carousel">
+      <button class="carousel-btn carousel-prev" onclick="scrollReviews(-1)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Review cards will be inserted here by JavaScript -->
+          <div class="review-card">
+            <div style="text-align: center; color: #999; padding: 3rem;">
+              Loading Google reviews...
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-btn carousel-next" onclick="scrollReviews(1)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <div class="carousel-dots" id="carouselDots" style="margin-top: 2rem;"></div>
+  </div>
+</section>
+
 
 <!-- BOOKING / CONTACT -->
 <section id="booking">
@@ -658,5 +693,101 @@
 
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
+
+<!-- GOOGLE REVIEWS CAROUSEL SCRIPT -->
+<script>
+// Google Reviews Data - Replace with your actual Google reviews
+const googleReviews = [
+  {
+    rating: '★★★★★',
+    text: 'Exceptional service! Costa Driver provided a seamless transfer experience. The driver was professional, courteous, and knew the region intimately. Highly recommend for luxury travel on the Riviera.',
+    author: 'Michael R.',
+    location: 'London, UK'
+  },
+  {
+    rating: '★★★★★',
+    text: 'Outstanding discretion and attention to detail. Our family enjoyed perfect privacy and comfort throughout our journey. Costa Driver truly understands what luxury service means.',
+    author: 'Isabelle & Philippe T.',
+    location: 'Paris, France'
+  },
+  {
+    rating: '★★★★★',
+    text: 'Professional, punctual, and personable. The chauffeur anticipated our needs before we even had to ask. Worth every euro for premium service.',
+    author: 'Emma S.',
+    location: 'Munich, Germany'
+  },
+  {
+    rating: '★★★★★',
+    text: 'Best transfer service on the Côte d\'Azur! Reliable, elegant, and the vehicles are immaculate. Costa Driver is the gold standard.',
+    author: 'Robert J.',
+    location: 'New York, USA'
+  },
+  {
+    rating: '★★★★★',
+    text: 'Absolute perfection. From booking to arrival, everything was handled with grace and professionalism. I\'ll exclusively use Costa Driver for all my Riviera visits.',
+    author: 'Sofia M.',
+    location: 'Milan, Italy'
+  }
+];
+
+let currentReviewIndex = 0;
+
+function initCarousel() {
+  renderReviews();
+  renderDots();
+}
+
+function renderReviews() {
+  const track = document.getElementById('carouselTrack');
+  track.innerHTML = googleReviews.map((review, idx) => `
+    <div class="review-card ${idx !== currentReviewIndex ? 'hidden' : ''}">
+      <div class="review-rating">${review.rating}</div>
+      <p class="review-text">"${review.text}"</p>
+      <div class="review-author">
+        <span class="review-author-name">${review.author}</span>
+        <span class="review-author-location">${review.location}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderDots() {
+  const dotsContainer = document.getElementById('carouselDots');
+  dotsContainer.innerHTML = googleReviews.map((_, idx) => `
+    <button class="dot ${idx === currentReviewIndex ? 'active' : ''}" onclick="goToReview(${idx})"></button>
+  `).join('');
+}
+
+function scrollReviews(direction) {
+  currentReviewIndex += direction;
+
+  // Wrap around
+  if (currentReviewIndex >= googleReviews.length) {
+    currentReviewIndex = 0;
+  } else if (currentReviewIndex < 0) {
+    currentReviewIndex = googleReviews.length - 1;
+  }
+
+  updateCarousel();
+}
+
+function goToReview(idx) {
+  currentReviewIndex = idx;
+  updateCarousel();
+}
+
+function updateCarousel() {
+  renderReviews();
+  renderDots();
+}
+
+// Auto-advance carousel every 6 seconds
+setInterval(() => {
+  scrollReviews(1);
+}, 6000);
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initCarousel);
+</script>
 </body>
 </html>
