@@ -2,17 +2,28 @@
   <defs>
     <linearGradient id="silverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#e8e3d8"/>
-      <stop offset="100%" stop-color="#6b6359"/>
+      <stop offset="100%" stop-color="#5a5246"/>
     </linearGradient>
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#e8d89f"/>
-      <stop offset="100%" stop-color="#9d8a3f"/>
+      <stop offset="0%" stop-color="#d4b56a"/>
+      <stop offset="100%" stop-color="#5a4520"/>
     </linearGradient>
   </defs>
-  <!-- C arc (silver, left side) -->
-  <path d="M 50,10 A 40,42 0 1,0 50,90" stroke="url(#silverGrad)" stroke-width="8" stroke-linecap="round"/>
-  <!-- D divider (gold) -->
-  <line x1="50" y1="10" x2="50" y2="90" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round"/>
-  <!-- D arc (gold, right side) -->
-  <path d="M 50,10 A 40,42 0 0,1 50,90" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round"/>
+  <!-- C (silver, left side) - opens to the right -->
+  <path d="M 48,8 A 42,44 0 1,0 48,92"
+        stroke="url(#silverGrad)"
+        stroke-width="9"
+        stroke-linecap="round"
+        fill="none"/>
+  <!-- D vertical stroke (gold) - separated from C with a gap -->
+  <line x1="54" y1="8" x2="54" y2="92"
+        stroke="url(#goldGrad)"
+        stroke-width="9"
+        stroke-linecap="round"/>
+  <!-- D arc (gold) - curves to the right -->
+  <path d="M 54,8 A 42,44 0 0,1 54,92"
+        stroke="url(#goldGrad)"
+        stroke-width="9"
+        stroke-linecap="round"
+        fill="none"/>
 </svg>
