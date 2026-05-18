@@ -2056,6 +2056,8 @@ footer {
   header.scrolled { padding: 1rem 2rem; }
   nav { display: none; }
   .hamburger { display: flex; }
+  .lang-switcher { display: none; }
+  .btn-book { display: none; }
   .hero-content { padding: 0 2rem 6rem; }
   .section-inner { padding: 0 2rem; }
   .pillars-grid { grid-template-columns: 1fr; }
