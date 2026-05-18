@@ -1,103 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ══════════ HOMEPAGE ══════════ -->
   <url>
     <loc>https://costadriver.fr/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/"/>
   </url>
+  <url>
+    <loc>https://fr.costadriver.fr/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/"/>
+  </url>
+
+  <!-- ══════════ SERVICES ══════════ -->
   <url>
     <loc>https://costadriver.fr/services.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services.html"/>
   </url>
+  <url>
+    <loc>https://fr.costadriver.fr/services.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services.html"/>
+  </url>
+
+  <!-- ══════════ FAQ ══════════ -->
   <url>
     <loc>https://costadriver.fr/faq.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/faq.html"/>
   </url>
+  <url>
+    <loc>https://fr.costadriver.fr/faq.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/faq.html"/>
+  </url>
+
+  <!-- ══════════ NEWS/BLOG ══════════ -->
   <url>
     <loc>https://costadriver.fr/whats-up-riviera.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/whats-up-riviera.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/whats-up-riviera.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/whats-up-riviera.html"/>
+  </url>
+  <url>
+    <loc>https://fr.costadriver.fr/whats-up-riviera.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/whats-up-riviera.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/whats-up-riviera.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/whats-up-riviera.html"/>
   </url>
 
-  <!-- Destinations -->
-  <url>
-    <loc>https://costadriver.fr/destinations/les-deux-alpes.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/destinations/monaco.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/destinations/cannes.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/destinations/saint-tropez.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/destinations/portofino.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/destinations/cinque-terre.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/destinations/milano.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/destinations/geneve.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- ══════════ DESTINATIONS (EN) ══════════ -->
+  <url><loc>https://costadriver.fr/destinations/monaco.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/monaco.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/monaco.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/monaco.html"/></url>
+  <url><loc>https://costadriver.fr/destinations/cannes.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/cannes.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/cannes.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/cannes.html"/></url>
+  <url><loc>https://costadriver.fr/destinations/saint-tropez.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/saint-tropez.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/saint-tropez.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/saint-tropez.html"/></url>
+  <url><loc>https://costadriver.fr/destinations/portofino.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/portofino.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/portofino.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/portofino.html"/></url>
+  <url><loc>https://costadriver.fr/destinations/cinque-terre.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/cinque-terre.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/cinque-terre.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/cinque-terre.html"/></url>
+  <url><loc>https://costadriver.fr/destinations/milano.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/milano.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/milano.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/milano.html"/></url>
+  <url><loc>https://costadriver.fr/destinations/geneve.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/geneve.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/geneve.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/geneve.html"/></url>
+  <url><loc>https://costadriver.fr/destinations/les-deux-alpes.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/les-deux-alpes.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/les-deux-alpes.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/les-deux-alpes.html"/></url>
 
-  <!-- Services -->
-  <url>
-    <loc>https://costadriver.fr/services/private-excursions.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/services/luxury-concierge.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/services/events-occasions.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://costadriver.fr/services/destination-weddings.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- ══════════ DESTINATIONS (FR) ══════════ -->
+  <url><loc>https://fr.costadriver.fr/destinations/monaco.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/monaco.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/monaco.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/monaco.html"/></url>
+  <url><loc>https://fr.costadriver.fr/destinations/cannes.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/cannes.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/cannes.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/cannes.html"/></url>
+  <url><loc>https://fr.costadriver.fr/destinations/saint-tropez.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/saint-tropez.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/saint-tropez.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/saint-tropez.html"/></url>
+  <url><loc>https://fr.costadriver.fr/destinations/portofino.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/portofino.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/portofino.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/portofino.html"/></url>
+  <url><loc>https://fr.costadriver.fr/destinations/cinque-terre.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/cinque-terre.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/cinque-terre.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/cinque-terre.html"/></url>
+  <url><loc>https://fr.costadriver.fr/destinations/milano.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/milano.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/milano.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/milano.html"/></url>
+  <url><loc>https://fr.costadriver.fr/destinations/geneve.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/geneve.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/geneve.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/geneve.html"/></url>
+  <url><loc>https://fr.costadriver.fr/destinations/les-deux-alpes.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/destinations/les-deux-alpes.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/destinations/les-deux-alpes.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/destinations/les-deux-alpes.html"/></url>
+
+  <!-- ══════════ SERVICES (EN) ══════════ -->
+  <url><loc>https://costadriver.fr/services/private-excursions.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services/private-excursions.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services/private-excursions.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services/private-excursions.html"/></url>
+  <url><loc>https://costadriver.fr/services/luxury-concierge.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services/luxury-concierge.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services/luxury-concierge.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services/luxury-concierge.html"/></url>
+  <url><loc>https://costadriver.fr/services/events-occasions.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services/events-occasions.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services/events-occasions.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services/events-occasions.html"/></url>
+  <url><loc>https://costadriver.fr/services/destination-weddings.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services/destination-weddings.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services/destination-weddings.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services/destination-weddings.html"/></url>
+
+  <!-- ══════════ SERVICES (FR) ══════════ -->
+  <url><loc>https://fr.costadriver.fr/services/private-excursions.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services/private-excursions.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services/private-excursions.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services/private-excursions.html"/></url>
+  <url><loc>https://fr.costadriver.fr/services/luxury-concierge.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services/luxury-concierge.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services/luxury-concierge.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services/luxury-concierge.html"/></url>
+  <url><loc>https://fr.costadriver.fr/services/events-occasions.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services/events-occasions.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services/events-occasions.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services/events-occasions.html"/></url>
+  <url><loc>https://fr.costadriver.fr/services/destination-weddings.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en" href="https://costadriver.fr/services/destination-weddings.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://fr.costadriver.fr/services/destination-weddings.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://costadriver.fr/services/destination-weddings.html"/></url>
+
 </urlset>
