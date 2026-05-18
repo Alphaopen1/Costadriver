@@ -851,11 +851,11 @@ p { color: #555; line-height: 1.85; }
   display: none;
 }
 
-/* E-Class sizing: larger with white border cropped */
+/* E-Class sizing: match S-Class height but crop white borders */
 .vehicle-card:nth-child(1) .vehicle-img {
-  height: 240px;
+  height: 220px;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center 35%;
 }
 
 /* ─── GOOGLE REVIEWS CAROUSEL ─── */
