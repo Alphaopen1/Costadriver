@@ -1,0 +1,25 @@
+{
+  "buildCommand": "npm run build || true",
+  "env": {},
+  "rewrites": [
+    {
+      "source": "/:path((?!assets|destinations|services|news|fr|favicon|robots|404|_next).*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/fr/:path((?!assets).*)",
+      "destination": "/fr/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/fr/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=3600, stale-while-revalidate=86400"
+        }
+      ]
+    }
+  ]
+}
