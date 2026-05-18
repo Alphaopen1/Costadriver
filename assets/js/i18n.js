@@ -8,7 +8,7 @@
   var DEFAULT_LANG = 'en';
   var SUPPORTED_LANGS = ['en', 'fr', 'ru', 'es'];
   var STORAGE_KEY = 'preferred_language';
-  var CACHE_VERSION = '4'; // increment when translations are updated
+  var CACHE_VERSION = '5'; // increment when translations are updated
 
   // Cache for loaded translations
   var translations = {};
@@ -163,12 +163,28 @@
   }
 
   /**
+   * Get language from HTML lang attribute.
+   */
+  function getHtmlLang() {
+    var htmlLang = document.documentElement.getAttribute('lang');
+    if (htmlLang && SUPPORTED_LANGS.indexOf(htmlLang) !== -1) {
+      return htmlLang;
+    }
+    return null;
+  }
+
+  /**
    * Get saved language or default.
    */
   function getSavedLanguage() {
     var saved = localStorage.getItem(STORAGE_KEY);
     if (saved && SUPPORTED_LANGS.indexOf(saved) !== -1) {
       return saved;
+    }
+    // Check HTML lang attribute as fallback
+    var htmlLang = getHtmlLang();
+    if (htmlLang) {
+      return htmlLang;
     }
     return DEFAULT_LANG;
   }
