@@ -1,6 +1,4 @@
 {
-  "buildCommand": "npm run build || true",
-  "env": {},
   "rewrites": [
     {
       "source": "/:path((?!assets|destinations|services|news|fr|favicon|robots|404|_next).*)",
