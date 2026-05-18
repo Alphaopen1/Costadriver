@@ -4,7 +4,7 @@
   --charcoal: #1a1a1a;
   --cream: #f5f0e8;
   --taupe: #c4b8a4;
-  --gold: #b8985a;
+  --gold: #D4C050;
   --slate: #8a9aaa;
   --white: #fdfcfa;
   --body-font: 'Jost', sans-serif;
@@ -849,6 +849,12 @@ p { color: #555; line-height: 1.85; }
   background: rgba(184,152,90,0.3);
   margin: 1.5rem 0 0;
   display: none;
+}
+
+/* E-Class sizing: 10% smaller than S-Class */
+.vehicle-card:nth-child(1) .vehicle-img {
+  transform: scale(0.9);
+  transform-origin: center;
 }
 
 /* ─── SERVICES PAGE ─── */
@@ -2102,6 +2108,18 @@ footer {
   h1 { font-size: 2.2rem; }
   h2 { font-size: 1.8rem; }
 
+  /* Mobile typography improvements: increase small text */
+  .section-label { font-size: 0.75rem; }
+  nav > a, nav > .nav-dropdown > a { font-size: 0.8rem; }
+  .nav-dropdown-menu a { font-size: 0.8rem; }
+  .lang-switcher a { font-size: 0.8rem; }
+  .btn-book { font-size: 0.8rem; }
+  .service-link { font-size: 0.9rem; }
+  .service-features span { font-size: 1rem; }
+  .footer-col p { font-size: 1rem; }
+  .footer-col ul li a { font-size: 1rem; }
+  .footer-bottom p { font-size: 0.9rem; }
+
   /* Spacing — reduce 8rem sections to 4rem */
   #pillars, #destinations, #service, #about,
   #testimonials, #booking,
@@ -2134,6 +2152,11 @@ footer {
 
   /* Fleet */
   .fleet-grid { grid-template-columns: 1fr; }
+  .vehicle-class { font-size: 0.75rem; }
+  .vehicle-card h4 { font-size: 1.5rem; }
+  .vehicle-card p { font-size: 0.95rem; }
+  .passenger-capacity { font-size: 0.9rem; }
+  .tier { font-size: 0.85rem; }
 
   /* Service steps */
   .service-intro { margin-bottom: 3rem; }
