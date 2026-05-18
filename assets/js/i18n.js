@@ -8,6 +8,7 @@
   var DEFAULT_LANG = 'en';
   var SUPPORTED_LANGS = ['en', 'fr', 'ru', 'es'];
   var STORAGE_KEY = 'preferred_language';
+  var CACHE_VERSION = '3'; // increment when translations are updated
 
   // Cache for loaded translations
   var translations = {};
@@ -41,7 +42,7 @@
       return Promise.resolve(translations[lang]);
     }
 
-    var url = getBasePath() + lang + '.json';
+    var url = getBasePath() + lang + '.json?v=' + CACHE_VERSION;
 
     return fetch(url)
       .then(function (response) {
