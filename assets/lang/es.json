@@ -198,5 +198,14 @@
   "booking.send_via": "Enviar por",
   "dest.geneve.tag": "Suiza",
   "dest.geneve.title": "Ginebra",
-  "dest.geneve.text": "La capital cosmopolita de Suiza a orillas del lago Lemán. Diplomacia internacional, alta relojería y grandeza alpina — conectada desde la Riviera con precisión impecable."
+  "dest.geneve.text": "La capital cosmopolita de Suiza a orillas del lago Lemán. Diplomacia internacional, alta relojería y grandeza alpina — conectada desde la Riviera con precisión impecable.",
+  "geneve.hero.label": "Elegancia Internacional",
+  "geneve.hero.title": "Ginebra<br /><em>Precisión.</em>",
+  "geneve.hero.sub": "La capital cosmopolita de Suiza a orillas del lago Lemán. Diplomacia internacional, alta relojería y grandeza alpina — conectada desde la Riviera con precisión impecable.",
+  "related.label": "Continuar Explorando",
+  "related.title": "Otros destinos<br /><em>de la Riviera.</em>",
+  "services_links.label": "Más Allá del Transporte",
+  "services_links.title": "Complete su<br /><em>experiencia.</em>",
+  "dest_links.label": "Dónde Operamos",
+  "dest_links.title": "A través de la<br /><em>Riviera.</em>"
 }

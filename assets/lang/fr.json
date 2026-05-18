@@ -198,5 +198,14 @@
   "booking.send_via": "Envoyer via",
   "dest.geneve.tag": "Suisse",
   "dest.geneve.title": "Genève",
-  "dest.geneve.text": "Capitale cosmopolite de la Suisse au bord du lac Léman. Diplomatie internationale, haute horlogerie et grandeur alpine — connectée depuis la Riviera avec une précision sans faille."
+  "dest.geneve.text": "Capitale cosmopolite de la Suisse au bord du lac Léman. Diplomatie internationale, haute horlogerie et grandeur alpine — connectée depuis la Riviera avec une précision sans faille.",
+  "geneve.hero.label": "Élégance Internationale",
+  "geneve.hero.title": "Genève<br /><em>Précision.</em>",
+  "geneve.hero.sub": "La capitale cosmopolite de la Suisse au bord du lac Léman. Diplomatie internationale, haute horlogerie et grandeur alpine — connectée depuis la Riviera avec une précision sans faille.",
+  "related.label": "Continuer L'exploration",
+  "related.title": "Autres destinations<br /><em>de la Riviera.</em>",
+  "services_links.label": "Au-delà du Transport",
+  "services_links.title": "Complétez votre<br /><em>expérience.</em>",
+  "dest_links.label": "Où Nous Opérons",
+  "dest_links.title": "À travers la<br /><em>Riviera.</em>"
 }
