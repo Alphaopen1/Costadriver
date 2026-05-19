@@ -117,6 +117,18 @@
   </nav>
 
   <div style="display:flex; align-items:center; gap:1.75rem;">
+    <!-- Google Reviews widget -->
+    <a href="https://share.google/DaoKtu8rUORm5ZAAQ" target="_blank" rel="noopener" class="gmb-widget" aria-label="Voir nos avis Google">
+      <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+      </svg>
+      <span class="gmb-stars">★★★★★</span>
+      <span class="gmb-score">5.0</span>
+      <span class="gmb-count">67 reviews</span>
+    </a>
     <div class="lang-switcher">
       <a href="#" class="active">EN</a>
       <span class="lang-sep">|</span>
@@ -477,48 +489,6 @@
   </div>
 </section>
 
-<!-- GOOGLE REVIEWS CAROUSEL -->
-<section id="google-reviews" style="background: #f5f0e8; padding: 6rem 0; position: relative;">
-  <div class="section-inner">
-    <div class="section-label" data-i18n="reviews.label">Google Reviews</div>
-    <h2 data-i18n="reviews.title" style="margin-bottom: 1.5rem;">What Google says</h2>
-
-    <!-- Live rating badge — updated daily by GitHub Actions -->
-    <div id="reviews-badge" style="display:flex;align-items:center;gap:0.75rem;justify-content:center;margin-bottom:2.5rem;font-family:var(--body-font);">
-      <span class="badge-stars" style="color:#d4b56a;font-size:1.1rem;font-weight:500;">★ 5.0</span>
-      <span class="badge-count" style="color:#5a5246;font-size:0.9rem;letter-spacing:0.05em;">67 avis Google</span>
-      <a href="https://maps.google.com/?cid=YOUR_CID" target="_blank" rel="noopener"
-         style="color:#5a5246;font-size:0.8rem;text-decoration:underline;opacity:0.6;">Voir tous les avis ↗</a>
-    </div>
-
-    <div class="reviews-carousel">
-      <button class="carousel-btn carousel-prev" onclick="scrollReviews(-1)">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="15 18 9 12 15 6"></polyline>
-        </svg>
-      </button>
-
-      <div class="carousel-container">
-        <div class="carousel-track" id="carouselTrack">
-          <!-- Review cards will be inserted here by JavaScript -->
-          <div class="review-card">
-            <div style="text-align: center; color: #999; padding: 3rem;">
-              Loading Google reviews...
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="carousel-btn carousel-next" onclick="scrollReviews(1)">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </button>
-    </div>
-
-    <div class="carousel-dots" id="carouselDots" style="margin-top: 2rem;"></div>
-  </div>
-</section>
 
 
 <!-- BOOKING / CONTACT -->
@@ -713,135 +683,5 @@
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 
-<!-- GOOGLE REVIEWS CAROUSEL SCRIPT -->
-<script>
-// ─── Fallback reviews (displayed while real ones load or if API not yet set up) ───
-const fallbackReviews = [
-  {
-    rating: '★★★★★',
-    text: 'Service irréprochable ! Costa Driver a transformé nos trajets Cannes-Monaco en véritables moments de détente. Parfait pour nos déplacements professionnels.',
-    author: 'François D.',
-    location: 'Cannes'
-  },
-  {
-    rating: '★★★★★',
-    text: 'Discrétion absolue et professionnalisme irréprochable. C\'est LA référence pour les transferts VIP sur la Côte d\'Azur. Les véhicules sont impeccables.',
-    author: 'Véronique & Laurent M.',
-    location: 'Paris'
-  },
-  {
-    rating: '★★★★★',
-    text: 'Ponctualité garantie, confort premium, et surtout une connaissance inégalée de la région. Merci pour ces services de qualité !',
-    author: 'Sylvie B.',
-    location: 'Lyon'
-  },
-  {
-    rating: '★★★★★',
-    text: 'Le meilleur service de transfert privé de la Riviera. Les chauffeurs parlent plusieurs langues et connaissent Antibes, Cannes et Monaco comme la paume de leur main.',
-    author: 'Marc T.',
-    location: 'Mougins'
-  },
-  {
-    rating: '★★★★★',
-    text: 'Réactivité, élégance, confidentialité — tous les critères d\'un véritable service haut de gamme. À recommander sans hésiter pour la Côte d\'Azur et la Riviera Italienne.',
-    author: 'Christiane & Jean-Paul R.',
-    location: 'Bordeaux'
-  }
-];
-
-let googleReviews = fallbackReviews;
-let currentReviewIndex = 0;
-let autoplayTimer = null;
-
-// ─── Load real reviews from JSON (generated daily by GitHub Actions) ───
-async function loadReviews() {
-  try {
-    const res = await fetch('/assets/data/reviews.json?v=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-
-    if (data.reviews && data.reviews.length > 0) {
-      googleReviews = data.reviews.map(r => ({
-        rating: '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating),
-        text: r.text,
-        author: r.author,
-        location: r.time || '' // relative time from Google e.g. "2 months ago"
-      }));
-
-      // Update summary badge
-      const badge = document.getElementById('reviews-badge');
-      if (badge) {
-        badge.innerHTML = `
-          <span class="badge-stars">★ ${data.averageRating.toFixed(1)}</span>
-          <span class="badge-count">${data.totalReviews} avis Google</span>
-        `;
-      }
-    }
-  } catch (e) {
-    // Silently use fallback reviews — no API yet configured
-    console.info('Reviews: using fallback data.', e.message);
-  }
-  initCarousel();
-}
-
-function initCarousel() {
-  renderReviews();
-  renderDots();
-  startAutoplay();
-}
-
-function renderReviews() {
-  const track = document.getElementById('carouselTrack');
-  if (!track) return;
-  track.innerHTML = googleReviews.map((review, idx) => `
-    <div class="review-card ${idx !== currentReviewIndex ? 'hidden' : ''}">
-      <div class="review-rating">${review.rating}</div>
-      <p class="review-text">"${review.text}"</p>
-      <div class="review-author">
-        <span class="review-author-name">${review.author}</span>
-        <span class="review-author-location">${review.location}</span>
-      </div>
-    </div>
-  `).join('');
-}
-
-function renderDots() {
-  const dotsContainer = document.getElementById('carouselDots');
-  if (!dotsContainer) return;
-  dotsContainer.innerHTML = googleReviews.map((_, idx) => `
-    <button class="dot ${idx === currentReviewIndex ? 'active' : ''}" onclick="goToReview(${idx})"></button>
-  `).join('');
-}
-
-function scrollReviews(direction) {
-  currentReviewIndex += direction;
-  if (currentReviewIndex >= googleReviews.length) currentReviewIndex = 0;
-  else if (currentReviewIndex < 0) currentReviewIndex = googleReviews.length - 1;
-  updateCarousel();
-}
-
-function goToReview(idx) {
-  currentReviewIndex = idx;
-  resetAutoplay();
-  updateCarousel();
-}
-
-function updateCarousel() {
-  renderReviews();
-  renderDots();
-}
-
-function startAutoplay() {
-  autoplayTimer = setInterval(() => scrollReviews(1), 6000);
-}
-
-function resetAutoplay() {
-  clearInterval(autoplayTimer);
-  startAutoplay();
-}
-
-// Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', loadReviews);
-</script>
 </body>
 </html>
