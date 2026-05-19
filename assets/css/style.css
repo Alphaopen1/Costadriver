@@ -59,7 +59,7 @@ header.scrolled { padding: 1rem 4rem; }
   text-transform: uppercase;
   line-height: 1;
 }
-.logo-text span { color: var(--gold); }
+/* .logo-text span removed – logo is now plain COSTADRIVER */
 
 nav {
   display: flex;
