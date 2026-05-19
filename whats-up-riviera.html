@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-    (function() {
-      var h = window.location.hostname;
-      var p = window.location.pathname;
-      if (h.indexOf("fr.") === 0 && p.indexOf("/fr") !== 0) {
-        window.location.replace("/fr" + (p === "/" ? "/" : p) + window.location.search + window.location.hash);
-      }
-    })();
-  </script>
+  <script src="/assets/js/redirect.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>What's Up Riviera | Costa Driver News & Guides</title>

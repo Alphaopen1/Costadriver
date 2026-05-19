@@ -1,0 +1,1 @@
+(function(){var h=window.location.hostname,p=window.location.pathname;if(h.indexOf('fr.')===0&&p.indexOf('/fr')!==0){window.location.replace('/fr'+(p==='/'?'/':p)+window.location.search+window.location.hash);}})();
