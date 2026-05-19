@@ -61,7 +61,7 @@ header.scrolled { padding: 1rem 4rem; }
 }
 /* .logo-text span removed – logo is now plain COSTADRIVER */
 
-/* ── Google Reviews badge (header top-right) ── */
+/* ── Google Reviews — desktop header badge ── */
 .gmb-widget {
   display: flex;
   align-items: center;
@@ -73,62 +73,47 @@ header.scrolled { padding: 1rem 4rem; }
   transition: border-color 0.2s, background 0.2s;
   white-space: nowrap;
 }
-.gmb-widget:hover {
-  border-color: rgba(212,181,106,0.7);
-  background: rgba(212,181,106,0.07);
+.gmb-widget:hover { border-color: rgba(212,181,106,0.7); background: rgba(212,181,106,0.07); }
+.gmb-widget svg  { flex-shrink: 0; }
+.gmb-stars  { color: #d4b56a; font-size: 0.7rem; letter-spacing: 0.05em; line-height: 1; }
+.gmb-score  { color: var(--cream); font-family: var(--body-font); font-size: 0.8rem; font-weight: 500; }
+.gmb-count  { color: rgba(232,227,216,0.6); font-family: var(--body-font); font-size: 0.72rem; }
+
+/* Hide header badge on mobile — replaced by floating widget */
+@media (max-width: 1024px) { .gmb-widget { display: none; } }
+
+/* ── Google Reviews — floating bubble (mobile, next to WhatsApp) ── */
+.gmb-float {
+  display: none; /* hidden on desktop */
 }
-.gmb-widget svg { flex-shrink: 0; }
-.gmb-stars {
-  color: #d4b56a;
-  font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  line-height: 1;
-}
-.gmb-score {
-  color: var(--cream);
-  font-family: var(--body-font);
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-.gmb-count {
-  color: rgba(232,227,216,0.6);
-  font-family: var(--body-font);
-  font-size: 0.72rem;
-  letter-spacing: 0.03em;
-}
-/* Mobile (≤1024px): G  5 ★  (67) — white text, no full star row */
 @media (max-width: 1024px) {
-  .gmb-widget {
+  .gmb-float {
     display: flex;
     align-items: center;
-    padding: 0.3rem 0.4rem;
     gap: 0.3rem;
-    border-color: transparent;
+    text-decoration: none;
+    background: var(--charcoal);
+    border: 1px solid rgba(212,181,106,0.3);
+    border-radius: 50px;
+    padding: 0 0.75rem;
+    height: 3.25rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    transition: border-color 0.2s;
+    /* Position fixed: same row as WhatsApp button */
+    position: fixed;
+    bottom: 2rem;
+    right: 5.75rem; /* 3.25rem btn + 2rem gap + 0.5rem */
+    z-index: 999;
   }
-  /* Hide the ★★★★★ row */
-  .gmb-stars { display: none; }
-  /* Show score in white */
-  .gmb-score {
-    display: inline;
-    color: #fff;
-    font-size: 0.78rem;
-  }
-  /* Add single ★ after score, then (67) */
-  .gmb-score::after {
-    content: " ★";
-    color: #d4b56a;
-  }
-  /* Show (67) in white */
-  .gmb-count {
-    font-size: 0;
-    color: transparent;
-  }
-  .gmb-count::before {
-    content: "(67)";
-    font-size: 0.72rem;
+  .gmb-float:hover { border-color: rgba(212,181,106,0.6); }
+  .gmb-float svg { flex-shrink: 0; }
+  .gmb-float-text {
     color: #fff;
     font-family: var(--body-font);
-    letter-spacing: 0.02em;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
   }
 }
 
