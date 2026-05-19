@@ -119,8 +119,6 @@
   "booking.passengers.1": "1 passager",
   "booking.passengers.2": "2 passagers",
   "booking.passengers.3": "3 passagers",
-  "booking.passengers.4": "4 passagers",
-  "booking.passengers.5-7": "5–7 passagers",
   "booking.vehicle": "Préférence de véhicule",
   "booking.vehicle.none": "Pas de préférence",
   "booking.message": "Demandes spéciales",
@@ -547,5 +545,10 @@
   "news.cta.h2": "Ne manquez aucun<br /><em>moment Riviera.</em>",
   "news.cta.p": "De nouveaux guides chaque mois. Accès d'initié, conseils saisonniers, événements exclusifs — pour ceux qui voyagent différemment.",
   "news.cta.btn": "Nous contacter",
-  "footer.navigation": "Navigation"
+  "footer.navigation": "Navigation",
+  "booking.passengers.4-8": "4 à 8 passagers",
+  "booking.vehicle.berline": "Berline",
+  "booking.vehicle.berline-luxe": "Berline Luxe",
+  "booking.vehicle.van": "VAN",
+  "booking.vehicle.suv": "SUV"
 }
