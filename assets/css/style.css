@@ -96,9 +96,16 @@ header.scrolled { padding: 1rem 4rem; }
   font-size: 0.72rem;
   letter-spacing: 0.03em;
 }
-/* Hide text labels on small screens, keep stars + score */
-@media (max-width: 900px) {
-  .gmb-widget { display: none; }
+/* Mobile (≤1024px): compact G + stars only, hide score & count */
+@media (max-width: 1024px) {
+  .gmb-widget {
+    display: flex;
+    padding: 0.3rem 0.45rem;
+    gap: 0.25rem;
+    border-color: transparent;
+  }
+  .gmb-score,
+  .gmb-count { display: none; }
 }
 
 nav {
