@@ -8,7 +8,7 @@
   var DEFAULT_LANG = 'en';
   var SUPPORTED_LANGS = ['en', 'fr', 'ru', 'es'];
   var STORAGE_KEY = 'preferred_language';
-  var CACHE_VERSION = '6'; // increment when translations are updated
+  var CACHE_VERSION = '7'; // increment when translations are updated
 
   // Cache for loaded translations
   var translations = {};
