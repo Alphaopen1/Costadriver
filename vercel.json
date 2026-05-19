@@ -5,7 +5,15 @@
       "has": [{"type": "host", "value": "www.costadriver.fr"}],
       "destination": "https://costadriver.fr/:path*",
       "permanent": true
-    }
+    },
+    { "source": "/contact",         "destination": "/#booking",      "permanent": true },
+    { "source": "/contact/",        "destination": "/#booking",      "permanent": true },
+    { "source": "/tarifs",          "destination": "/services.html", "permanent": true },
+    { "source": "/tarifs/",         "destination": "/services.html", "permanent": true },
+    { "source": "/nos-destinations","destination": "/#destinations", "permanent": true },
+    { "source": "/nos-destinations/","destination": "/#destinations","permanent": true },
+    { "source": "/reservation",     "destination": "/#booking",      "permanent": true },
+    { "source": "/reservation/",    "destination": "/#booking",      "permanent": true }
   ],
   "rewrites": [
     {
