@@ -1,0 +1,61 @@
+name: Fetch Google Reviews
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Every day at 6am UTC
+  workflow_dispatch:       # Allow manual trigger from GitHub UI
+
+jobs:
+  fetch-reviews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch reviews from Google Places API
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          PLACE_ID: ${{ secrets.GOOGLE_PLACE_ID }}
+        run: |
+          curl -s "https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=name,rating,user_ratings_total,reviews&language=fr&reviews_sort=newest&key=${GOOGLE_API_KEY}" \
+            -o /tmp/raw_response.json
+
+          # Extract and format the data
+          node -e "
+            const fs = require('fs');
+            const raw = JSON.parse(fs.readFileSync('/tmp/raw_response.json', 'utf8'));
+            const result = raw.result;
+
+            if (!result) {
+              console.error('API error:', JSON.stringify(raw));
+              process.exit(1);
+            }
+
+            const reviews = (result.reviews || []).map(r => ({
+              author: r.author_name,
+              rating: r.rating,
+              text: r.text,
+              time: r.relative_time_description,
+              timestamp: r.time,
+              photoUrl: r.profile_photo_url || null
+            }));
+
+            const output = {
+              averageRating: result.rating,
+              totalReviews: result.user_ratings_total,
+              reviews: reviews,
+              lastUpdated: new Date().toISOString()
+            };
+
+            fs.writeFileSync('assets/data/reviews.json', JSON.stringify(output, null, 2));
+            console.log('Saved ' + reviews.length + ' reviews. Average: ' + result.rating);
+          "
+
+      - name: Commit updated reviews
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/data/reviews.json
+          git diff --cached --quiet || git commit -m "chore: update Google reviews [skip ci]"
+          git push

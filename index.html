@@ -481,7 +481,15 @@
 <section id="google-reviews" style="background: #f5f0e8; padding: 6rem 0; position: relative;">
   <div class="section-inner">
     <div class="section-label" data-i18n="reviews.label">Google Reviews</div>
-    <h2 data-i18n="reviews.title" style="margin-bottom: 3rem;">What Google says</h2>
+    <h2 data-i18n="reviews.title" style="margin-bottom: 1.5rem;">What Google says</h2>
+
+    <!-- Live rating badge — updated daily by GitHub Actions -->
+    <div id="reviews-badge" style="display:flex;align-items:center;gap:0.75rem;justify-content:center;margin-bottom:2.5rem;font-family:var(--body-font);">
+      <span class="badge-stars" style="color:#d4b56a;font-size:1.1rem;font-weight:500;">★ 5.0</span>
+      <span class="badge-count" style="color:#5a5246;font-size:0.9rem;letter-spacing:0.05em;">67 avis Google</span>
+      <a href="https://maps.google.com/?cid=YOUR_CID" target="_blank" rel="noopener"
+         style="color:#5a5246;font-size:0.8rem;text-decoration:underline;opacity:0.6;">Voir tous les avis ↗</a>
+    </div>
 
     <div class="reviews-carousel">
       <button class="carousel-btn carousel-prev" onclick="scrollReviews(-1)">
@@ -707,49 +715,84 @@
 
 <!-- GOOGLE REVIEWS CAROUSEL SCRIPT -->
 <script>
-// Google Reviews Data - Replace with your actual Google reviews
-const googleReviews = [
+// ─── Fallback reviews (displayed while real ones load or if API not yet set up) ───
+const fallbackReviews = [
   {
     rating: '★★★★★',
-    text: 'Service irréprochable ! Costa Driver a transformé nos trajets Cannes-Monaco en véritables moments de détente. Le chauffeur connaît chaque route, chaque raccourci, et propose même des suggestions de restaurants qu\'on n\'aurait jamais trouvés. Parfait pour nos déplacements professionnels.',
+    text: 'Service irréprochable ! Costa Driver a transformé nos trajets Cannes-Monaco en véritables moments de détente. Parfait pour nos déplacements professionnels.',
     author: 'François D.',
     location: 'Cannes'
   },
   {
     rating: '★★★★★',
-    text: 'Discrétion absolue et professionnalisme irréprochable. C\'est LA référence pour les transferts VIP sur la Côte d\'Azur. Les véhicules sont impeccables, les chauffeurs discrets mais attentifs. Nous les recommandons vivement à tous nos amis de passage à Antibes.',
+    text: 'Discrétion absolue et professionnalisme irréprochable. C\'est LA référence pour les transferts VIP sur la Côte d\'Azur. Les véhicules sont impeccables.',
     author: 'Véronique & Laurent M.',
     location: 'Paris'
   },
   {
     rating: '★★★★★',
-    text: 'Après 3 trajets avec Costa Driver entre Nice et Saint-Tropez, c\'est devenu notre incontournable de l\'été. Ponctualité garantie, confort premium, et surtout une connaissance inégalée de la région. Merci pour ces services de qualité !',
+    text: 'Ponctualité garantie, confort premium, et surtout une connaissance inégalée de la région. Merci pour ces services de qualité !',
     author: 'Sylvie B.',
     location: 'Lyon'
   },
   {
     rating: '★★★★★',
-    text: 'Le meilleur service de transfert privé de la Riviera. Les véhicules sont magnifiques, les chauffeurs parlent plusieurs langues et connaissent Antibes, Cannes et Monaco comme la paume de leur main. Costa Driver, c\'est l\'excellence à chaque trajet.',
+    text: 'Le meilleur service de transfert privé de la Riviera. Les chauffeurs parlent plusieurs langues et connaissent Antibes, Cannes et Monaco comme la paume de leur main.',
     author: 'Marc T.',
     location: 'Mougins'
   },
   {
     rating: '★★★★★',
-    text: 'Depuis nos vacances à Port Grimaud, nous n\'utilisons que Costa Driver pour nos déplacements. Réactivité, élégance, confidentialité - tous les critères d\'un véritable service haut de gamme. À recommander sans hésiter pour la Côte d\'Azur et la Riviera Italienne.',
+    text: 'Réactivité, élégance, confidentialité — tous les critères d\'un véritable service haut de gamme. À recommander sans hésiter pour la Côte d\'Azur et la Riviera Italienne.',
     author: 'Christiane & Jean-Paul R.',
     location: 'Bordeaux'
   }
 ];
 
+let googleReviews = fallbackReviews;
 let currentReviewIndex = 0;
+let autoplayTimer = null;
+
+// ─── Load real reviews from JSON (generated daily by GitHub Actions) ───
+async function loadReviews() {
+  try {
+    const res = await fetch('/assets/data/reviews.json?v=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+
+    if (data.reviews && data.reviews.length > 0) {
+      googleReviews = data.reviews.map(r => ({
+        rating: '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating),
+        text: r.text,
+        author: r.author,
+        location: r.time || '' // relative time from Google e.g. "2 months ago"
+      }));
+
+      // Update summary badge
+      const badge = document.getElementById('reviews-badge');
+      if (badge) {
+        badge.innerHTML = `
+          <span class="badge-stars">★ ${data.averageRating.toFixed(1)}</span>
+          <span class="badge-count">${data.totalReviews} avis Google</span>
+        `;
+      }
+    }
+  } catch (e) {
+    // Silently use fallback reviews — no API yet configured
+    console.info('Reviews: using fallback data.', e.message);
+  }
+  initCarousel();
+}
 
 function initCarousel() {
   renderReviews();
   renderDots();
+  startAutoplay();
 }
 
 function renderReviews() {
   const track = document.getElementById('carouselTrack');
+  if (!track) return;
   track.innerHTML = googleReviews.map((review, idx) => `
     <div class="review-card ${idx !== currentReviewIndex ? 'hidden' : ''}">
       <div class="review-rating">${review.rating}</div>
@@ -764,6 +807,7 @@ function renderReviews() {
 
 function renderDots() {
   const dotsContainer = document.getElementById('carouselDots');
+  if (!dotsContainer) return;
   dotsContainer.innerHTML = googleReviews.map((_, idx) => `
     <button class="dot ${idx === currentReviewIndex ? 'active' : ''}" onclick="goToReview(${idx})"></button>
   `).join('');
@@ -771,19 +815,14 @@ function renderDots() {
 
 function scrollReviews(direction) {
   currentReviewIndex += direction;
-
-  // Wrap around
-  if (currentReviewIndex >= googleReviews.length) {
-    currentReviewIndex = 0;
-  } else if (currentReviewIndex < 0) {
-    currentReviewIndex = googleReviews.length - 1;
-  }
-
+  if (currentReviewIndex >= googleReviews.length) currentReviewIndex = 0;
+  else if (currentReviewIndex < 0) currentReviewIndex = googleReviews.length - 1;
   updateCarousel();
 }
 
 function goToReview(idx) {
   currentReviewIndex = idx;
+  resetAutoplay();
   updateCarousel();
 }
 
@@ -792,13 +831,17 @@ function updateCarousel() {
   renderDots();
 }
 
-// Auto-advance carousel every 6 seconds
-setInterval(() => {
-  scrollReviews(1);
-}, 6000);
+function startAutoplay() {
+  autoplayTimer = setInterval(() => scrollReviews(1), 6000);
+}
+
+function resetAutoplay() {
+  clearInterval(autoplayTimer);
+  startAutoplay();
+}
 
 // Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', initCarousel);
+document.addEventListener('DOMContentLoaded', loadReviews);
 </script>
 </body>
 </html>
