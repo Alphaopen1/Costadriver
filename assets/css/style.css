@@ -845,16 +845,14 @@ p { color: #555; line-height: 1.85; }
 
 .vehicle-img {
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: contain;
   object-position: center center;
   margin-bottom: 1.5rem;
   filter: brightness(0.97) drop-shadow(0 10px 24px rgba(0,0,0,0.13));
   transition: transform 0.45s ease;
 }
-.vehicle-card:hover .vehicle-img {
-  transform: scale(1.06);
-}
+.vehicle-card:hover .vehicle-img { transform: scale(1.06); }
 
 .vehicle-class {
   font-size: 0.6rem;
@@ -898,11 +896,14 @@ p { color: #555; line-height: 1.85; }
   display: none;
 }
 
-/* E-Class sizing: smaller than S-Class but white borders cropped */
+/* E-Class: same contain as others, scale down slightly to match visual weight */
 .vehicle-card:nth-child(1) .vehicle-img {
-  height: 210px;
-  object-fit: cover;
-  object-position: center 40%;
+  transform: scale(0.88);
+  transform-origin: center center;
+  margin-bottom: 0.5rem;
+}
+.vehicle-card:nth-child(1):hover .vehicle-img {
+  transform: scale(0.88) scale(1.06);
 }
 
 /* ─── GOOGLE REVIEWS CAROUSEL ─── */
