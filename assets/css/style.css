@@ -896,14 +896,13 @@ p { color: #555; line-height: 1.85; }
   display: none;
 }
 
-/* E-Class: same contain as others, scale down slightly to match visual weight */
+/* E-Class: 20% larger than base */
 .vehicle-card:nth-child(1) .vehicle-img {
-  transform: scale(0.88);
+  transform: scale(1.2);
   transform-origin: center center;
-  margin-bottom: 0.5rem;
 }
 .vehicle-card:nth-child(1):hover .vehicle-img {
-  transform: scale(0.88) scale(1.06);
+  transform: scale(1.2) scale(1.06);
 }
 
 /* ─── GOOGLE REVIEWS CAROUSEL ─── */
