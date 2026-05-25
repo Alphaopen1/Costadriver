@@ -15,7 +15,6 @@ Costa Driver provides exclusive private chauffeur services between the most pres
 
 ## Destinations Served
 
-- Monaco: Grand Prix, casino transfers, yacht port pickups
 - Cannes: Film Festival, Palais des Festivals, hotel transfers
 - Nice: Côte d'Azur Airport (NCE) pickups and drop-offs
 - Saint-Tropez: Port Grimaud, beach clubs, private villas
@@ -46,7 +45,6 @@ Costa Driver provides exclusive private chauffeur services between the most pres
 - Homepage (FR): https://fr.costadriver.fr/
 - Services: https://costadriver.fr/services.html
 - FAQ: https://costadriver.fr/faq.html
-- Monaco: https://costadriver.fr/destinations/monaco.html
 - Cannes: https://costadriver.fr/destinations/cannes.html
 - Saint-Tropez: https://costadriver.fr/destinations/saint-tropez.html
 - Portofino: https://costadriver.fr/destinations/portofino.html

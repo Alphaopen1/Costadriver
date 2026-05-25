@@ -79,9 +79,10 @@ window.addEventListener('scroll', () => {
     var radios = form.querySelectorAll('input[name="send-method"]');
     radios.forEach(function(r) { if (r.checked) method = r.value; });
 
-    // Google Ads conversion — Formulaire de réservation
+    // Google Ads conversions — Réservation Formulaire
     if (typeof gtag === 'function') {
       gtag('event', 'conversion', { send_to: 'AW-17621110931/qzkzClvc768cEJOhs9JB' });
+      gtag('event', 'conversion', { send_to: 'AW-17621110931/a_foCPy_nrIcEJOhs9JB' });
     }
 
     if (method === 'whatsapp') {

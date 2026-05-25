@@ -2,53 +2,135 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{"type": "host", "value": "www.costadriver.fr"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.costadriver.fr"
+        }
+      ],
       "destination": "https://costadriver.fr/:path*",
       "permanent": true
     },
-    { "source": "/contact",         "destination": "/#booking",      "permanent": true },
-    { "source": "/contact/",        "destination": "/#booking",      "permanent": true },
-    { "source": "/tarifs",          "destination": "/services.html", "permanent": true },
-    { "source": "/tarifs/",         "destination": "/services.html", "permanent": true },
-    { "source": "/nos-destinations","destination": "/#destinations", "permanent": true },
-    { "source": "/nos-destinations/","destination": "/#destinations","permanent": true },
-    { "source": "/reservation",     "destination": "/#booking",      "permanent": true },
-    { "source": "/reservation/",    "destination": "/#booking",      "permanent": true }
+    {
+      "source": "/contact",
+      "destination": "/#booking",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/#booking",
+      "permanent": true
+    },
+    {
+      "source": "/tarifs",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/tarifs/",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/nos-destinations",
+      "destination": "/#destinations",
+      "permanent": true
+    },
+    {
+      "source": "/nos-destinations/",
+      "destination": "/#destinations",
+      "permanent": true
+    },
+    {
+      "source": "/reservation",
+      "destination": "/#booking",
+      "permanent": true
+    },
+    {
+      "source": "/reservation/",
+      "destination": "/#booking",
+      "permanent": true
+    },
+    {
+      "source": "/destinations/monaco.html",
+      "destination": "/destinations/saint-tropez.html",
+      "permanent": true
+    },
+    {
+      "source": "/fr/destinations/monaco.html",
+      "destination": "/fr/destinations/saint-tropez.html",
+      "permanent": true
+    }
   ],
   "rewrites": [
     {
       "source": "/",
-      "has": [{"type": "host", "value": "fr.costadriver.fr"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "fr.costadriver.fr"
+        }
+      ],
       "destination": "/fr/index.html"
     },
     {
       "source": "/index.html",
-      "has": [{"type": "host", "value": "fr.costadriver.fr"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "fr.costadriver.fr"
+        }
+      ],
       "destination": "/fr/index.html"
     },
     {
       "source": "/services.html",
-      "has": [{"type": "host", "value": "fr.costadriver.fr"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "fr.costadriver.fr"
+        }
+      ],
       "destination": "/fr/services.html"
     },
     {
       "source": "/faq.html",
-      "has": [{"type": "host", "value": "fr.costadriver.fr"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "fr.costadriver.fr"
+        }
+      ],
       "destination": "/fr/faq.html"
     },
     {
       "source": "/whats-up-riviera.html",
-      "has": [{"type": "host", "value": "fr.costadriver.fr"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "fr.costadriver.fr"
+        }
+      ],
       "destination": "/fr/whats-up-riviera.html"
     },
     {
       "source": "/destinations/:slug*",
-      "has": [{"type": "host", "value": "fr.costadriver.fr"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "fr.costadriver.fr"
+        }
+      ],
       "destination": "/fr/destinations/:slug*"
     },
     {
       "source": "/services/:slug*",
-      "has": [{"type": "host", "value": "fr.costadriver.fr"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "fr.costadriver.fr"
+        }
+      ],
       "destination": "/fr/services/:slug*"
     }
   ]
