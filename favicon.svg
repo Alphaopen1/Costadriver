@@ -1,15 +1,26 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
   <defs>
-    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#e8e3d8"/>
-      <stop offset="100%" stop-color="#5a5246"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1e35"/>
+      <stop offset="100%" stop-color="#0A1628"/>
     </linearGradient>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="silver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8e3d8"/>
+      <stop offset="100%" stop-color="#8a7d6a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#C9A664"/>
       <stop offset="100%" stop-color="#9C7E3F"/>
     </linearGradient>
   </defs>
-  <path d="M 48,8 A 42,44 0 1,0 48,92" stroke="url(#silverGrad)" stroke-width="9" stroke-linecap="round" fill="none"/>
-  <line x1="54" y1="8" x2="54" y2="92" stroke="url(#goldGrad)" stroke-width="9" stroke-linecap="round"/>
-  <path d="M 54,8 A 42,44 0 0,1 54,92" stroke="url(#goldGrad)" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <!-- Dark background -->
+  <circle cx="50" cy="50" r="50" fill="url(#bg)"/>
+  <!-- Gold ring border -->
+  <circle cx="50" cy="50" r="46" stroke="url(#gold)" stroke-width="1.2" fill="none" opacity="0.45"/>
+  <!-- Silver C arc (left) -->
+  <path d="M 47,15 A 33,35 0 1,0 47,85" stroke="url(#silver)" stroke-width="9" stroke-linecap="round"/>
+  <!-- Gold vertical spine -->
+  <line x1="52" y1="15" x2="52" y2="85" stroke="url(#gold)" stroke-width="9" stroke-linecap="round"/>
+  <!-- Gold D arc (right) -->
+  <path d="M 52,15 A 33,35 0 0,1 52,85" stroke="url(#gold)" stroke-width="9" stroke-linecap="round"/>
 </svg>
