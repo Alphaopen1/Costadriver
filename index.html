@@ -429,10 +429,27 @@ Private transfers and concierge coordination across the most coveted addresses o
 <input type="email" id="client-email" name="client-email" placeholder="your@email.com" required />
 </div>
 </div>
+<div class="form-group">
+<label for="trip-type" data-i18n="booking.trip_type">Trip Type</label>
+<div class="send-method-toggle" id="trip-type-toggle">
+<label class="method-option">
+<input type="radio" name="trip-type" value="one-way" checked />
+<span class="method-label" data-i18n="booking.trip_type.oneway">One-way / Aller simple</span>
+</label>
+<label class="method-option">
+<input type="radio" name="trip-type" value="round-trip" />
+<span class="method-label" data-i18n="booking.trip_type.roundtrip">Round-trip / Aller-retour</span>
+</label>
+</div>
+</div>
 <div class="form-row">
 <div class="form-group">
 <label for="departure-date" data-i18n="booking.departure">Departure Date</label>
 <input type="date" id="departure-date" name="departure-date" />
+</div>
+<div class="form-group">
+<label for="pickup-time" data-i18n="booking.pickup_time">Pick-up Time</label>
+<input type="time" id="pickup-time" name="pickup-time" step="60" />
 </div>
 <div class="form-group">
 <label for="return-date" data-i18n="booking.return">Return Date</label>

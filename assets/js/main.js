@@ -66,6 +66,25 @@ function gtag_report_conversion(onComplete) {
   var form = document.getElementById('booking-form');
   if (!form) return;
 
+  /* ── Trip type: disable return date on one-way ── */
+  var tripRadios = document.querySelectorAll('input[name="trip-type"]');
+  var returnDate = document.getElementById('return-date');
+
+  function toggleReturnDate() {
+    var checked = document.querySelector('input[name="trip-type"]:checked');
+    if (checked && returnDate) {
+      var isOneWay = checked.value === 'one-way';
+      returnDate.disabled = isOneWay;
+      returnDate.style.opacity = isOneWay ? '0.35' : '1';
+      if (isOneWay) returnDate.value = '';
+    }
+  }
+
+  tripRadios.forEach(function (r) {
+    r.addEventListener('change', toggleReturnDate);
+  });
+  toggleReturnDate();
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     e.stopPropagation();
@@ -78,6 +97,8 @@ function gtag_report_conversion(onComplete) {
     var dest    = val('destination');
     var pax     = val('passengers');
     var vehicle = val('vehicle');
+    var tripType = document.querySelector('input[name="trip-type"]:checked');
+    var pickup  = val('pickup-time');
     var message = val('message');
 
     // Validation
@@ -94,6 +115,8 @@ function gtag_report_conversion(onComplete) {
     if (dest)    parts.push('📍 *To:* '        + dest);
     if (pax)     parts.push('👥 *Passengers:* '+ pax);
     if (vehicle) parts.push('🚗 *Vehicle:* '   + vehicle);
+    if (pickup)  parts.push('⏰ *Pick-up:* '   + pickup);
+    if (tripType) parts.push('🔄 *Trip:* '    + (tripType.value === 'one-way' ? 'One-way / Aller simple' : 'Round-trip / Aller-retour'));
     if (message) parts.push('💬 *Notes:* '     + message);
     var text = parts.join('\n');
 
